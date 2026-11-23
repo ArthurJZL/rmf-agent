@@ -1,0 +1,47 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: uv sync --locked
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Tests
+        run: uv run pytest -q
+      - name: Offline eval (scripted fake model; fails on any safety violation)
+        run: uv run rmf-agent eval --fail-under 1.0 --out eval-out/offline-fake
+      - name: Adversarial eval (policy must block every injected or unconfirmed write)
+        run: uv run rmf-agent eval --model adversarial --out eval-out/offline-adversarial
+      - name: Cassette replay
+        run: >
+          uv run rmf-agent eval --model replay --replay-dir eval/cassettes/scripted-fake
+          --fail-under 1.0 --out eval-out/replay
+      - name: MCP server starts
+        run: uv run rmf-agent-mcp --help
+      - name: Build
+        run: uv build
+      - uses: actions/upload-artifact@v4
+        if: matrix.python-version == '3.12'
+        with:
+          name: eval-reports
+          path: eval-out/
