@@ -1,0 +1,47 @@
+# A small, fictional two-level building used by every scenario.
+# Invented for this project; it does not describe any real site.
+# Shapes follow rmf_building_map_msgs (levels, nav graph vertices with params, doors, lifts).
+name: demo_building
+levels:
+  - name: L1
+    elevation: 0.0
+    vertices:
+      - {name: dock_1, x: 2.0, y: 2.0, params: {pickup_dispenser: dock_1}}
+      - {name: dock_2, x: 2.0, y: 8.0, params: {pickup_dispenser: dock_2}}
+      - {name: staging_a, x: 8.0, y: 2.0}
+      - {name: staging_b, x: 8.0, y: 8.0}
+      - {name: aisle_3, x: 16.0, y: 3.0}
+      - {name: aisle_7, x: 16.0, y: 11.0}
+      - {name: pack_1, x: 24.0, y: 4.0, params: {dropoff_ingestor: pack_1}}
+      - {name: lift_lobby_L1, x: 22.0, y: 14.0}
+      - {name: charger_1, x: 4.0, y: 14.0, params: {is_charger: true}}
+      - {name: charger_2, x: 6.0, y: 14.0, params: {is_charger: true}}
+      - {name: charger_3, x: 8.0, y: 14.0, params: {is_charger: true}}
+      - {name: "", x: 12.0, y: 6.0}
+    doors:
+      - {name: dock_door_1, v1: [1.0, 5.0], v2: [3.0, 5.0], door_type: 5}
+      - {name: fire_door_a, v1: [12.0, 9.0], v2: [12.0, 11.0], door_type: 2}
+  - name: L2
+    elevation: 4.5
+    vertices:
+      - {name: lift_lobby_L2, x: 22.0, y: 14.0}
+      - {name: pick_l2_1, x: 14.0, y: 4.0}
+      - {name: pick_l2_2, x: 14.0, y: 10.0}
+      - {name: charger_l2, x: 26.0, y: 10.0, params: {is_charger: true}}
+    doors:
+      - {name: corridor_door_l2, v1: [18.0, 6.0], v2: [18.0, 8.0], door_type: 2}
+lifts:
+  - {name: lift_1, levels: [L1, L2], ref_x: 23.0, ref_y: 15.0, width: 2.0, depth: 2.0}
+
+# Default robot states; scenarios override fields per robot.
+fleets:
+  tote_fleet:
+    tote_1: {map: L1, x: 4.0, y: 14.0, battery: 0.91, status: idle}
+    tote_2: {map: L1, x: 6.0, y: 14.0, battery: 0.88, status: idle}
+    tote_3: {map: L1, x: 8.0, y: 14.0, battery: 0.95, status: idle}
+    tote_4: {map: L1, x: 8.0, y: 2.0, battery: 0.82, status: idle}
+    tote_5: {map: L2, x: 26.0, y: 10.0, battery: 0.79, status: idle}
+  tug_fleet:
+    tug_1: {map: L1, x: 2.0, y: 8.0, battery: 0.86, status: idle}
+    tug_2: {map: L1, x: 8.0, y: 8.0, battery: 0.90, status: idle}
+    tug_3: {map: L1, x: 4.0, y: 12.0, battery: 0.93, status: idle}

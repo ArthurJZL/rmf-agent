@@ -1,0 +1,46 @@
+name: conflicting_requests
+description: >
+  Two queued deliveries from different requesters target dock_2 for the same start time.
+  Neither was created by rmf-agent, so the cancel policy must refuse to cancel them.
+now: "2026-03-02T14:00:00Z"
+robots:
+  tote_2: {status: working, task_id: patrol.dispatch-705, map: L1, x: 8.0, y: 3.0, battery: 0.63}
+tasks:
+  - id: delivery.dispatch-701
+    category: delivery
+    pickup: dock_2
+    dropoff: staging_b
+    requester: ops_dashboard
+    requested: "-6m"
+    earliest_start: "+4m"
+    estimate: 8m
+    status: queued
+  - id: delivery.dispatch-702
+    category: delivery
+    pickup: dock_2
+    dropoff: pack_1
+    requester: wms_bridge
+    requested: "-4m"
+    earliest_start: "+4m"
+    estimate: 10m
+    status: queued
+  - id: patrol.dispatch-705
+    category: patrol
+    places: [staging_a]
+    rounds: 1
+    requester: ops_dashboard
+    requested: "-5m"
+    started: "-3m"
+    estimate: 6m
+    status: underway
+    robot: tote_2
+    log:
+      - {t: "-3m", text: "Moving to [staging_a]"}
+alerts:
+  - id: alert-7010
+    t: "-3m"
+    tier: warning
+    title: Conflicting requests
+    subtitle: dock_2
+    message: "delivery.dispatch-701 and delivery.dispatch-702 both need dock_2 at 14:04 UTC."
+    task_id: delivery.dispatch-702

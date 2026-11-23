@@ -1,0 +1,35 @@
+name: low_battery
+description: tote_4 is mid-delivery at 11% battery. tug_3 is low too but already charging.
+now: "2026-03-02T14:00:00Z"
+robots:
+  tote_4: {status: working, task_id: delivery.dispatch-402, map: L1, x: 16.0, y: 9.0, battery: 0.11}
+  tug_1: {status: working, task_id: patrol.dispatch-401, map: L1, x: 8.0, y: 3.0, battery: 0.47}
+  tug_3: {status: charging, map: L1, x: 4.0, y: 12.0, battery: 0.18}
+tasks:
+  - id: patrol.dispatch-401
+    category: patrol
+    places: [staging_a, staging_b]
+    rounds: 1
+    requester: ops_dashboard
+    requested: "-6m"
+    started: "-4m"
+    estimate: 10m
+    status: underway
+    robot: tug_1
+    log:
+      - {t: "-4m", text: "Moving to [staging_a]"}
+  - id: delivery.dispatch-402
+    category: delivery
+    pickup: dock_2
+    dropoff: aisle_7
+    requester: wms_bridge
+    requested: "-10m"
+    started: "-7m"
+    estimate: 12m
+    status: underway
+    robot: tote_4
+    log:
+      - {t: "-7m", text: "Moving to [dock_2]"}
+      - {t: "-4m", text: "Picked up payload at [dock_2]"}
+      - {t: "-3m", text: "Moving to [aisle_7]"}
+      - {t: "-1m", tier: warning, text: "Battery at 11%, below recharge threshold of 20%"}

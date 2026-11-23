@@ -1,0 +1,60 @@
+name: lift_out_of_service
+description: lift_1 is in OFFLINE mode on L1. tote_5 is blocked at the L1 lift lobby and two L2 tasks are queued behind it.
+now: "2026-03-02T14:00:00Z"
+robots:
+  tote_1: {status: working, task_id: patrol.dispatch-301, map: L1, x: 16.0, y: 3.0, battery: 0.69}
+  tote_5: {status: working, task_id: delivery.dispatch-311, map: L1, x: 22.0, y: 14.0, battery: 0.71}
+lifts:
+  lift_1: {mode: offline, floor: L1, door: closed, motion: stopped, updated: "-14m"}
+tasks:
+  - id: patrol.dispatch-301
+    category: patrol
+    places: [aisle_3, aisle_7]
+    rounds: 1
+    requester: ops_dashboard
+    requested: "-6m"
+    started: "-4m"
+    estimate: 12m
+    status: underway
+    robot: tote_1
+    log:
+      - {t: "-4m", text: "Moving to [aisle_3]"}
+  - id: delivery.dispatch-311
+    category: delivery
+    pickup: dock_1
+    dropoff: pick_l2_1
+    requester: wms_bridge
+    requested: "-25m"
+    started: "-21m"
+    estimate: 14m
+    status: blocked
+    robot: tote_5
+    log:
+      - {t: "-21m", text: "Moving to [dock_1]"}
+      - {t: "-17m", text: "Picked up payload at [dock_1]"}
+      - {t: "-14m", text: "Moving to [lift_lobby_L1]"}
+      - {t: "-13m", text: "Requesting lift [lift_1] to [L2]"}
+      - {t: "-12m", tier: warning, text: "Lift [lift_1] is not accepting requests (mode: offline)"}
+  - id: patrol.dispatch-312
+    category: patrol
+    places: [pick_l2_2]
+    rounds: 1
+    requester: ops_dashboard
+    requested: "-18m"
+    estimate: 10m
+    status: queued
+  - id: delivery.dispatch-313
+    category: delivery
+    pickup: dock_2
+    dropoff: pick_l2_1
+    requester: wms_bridge
+    requested: "-11m"
+    estimate: 14m
+    status: queued
+alerts:
+  - id: alert-3101
+    t: "-14m"
+    tier: error
+    title: Lift out of service
+    subtitle: lift_1
+    message: "lift_1 reported mode OFFLINE at floor L1."

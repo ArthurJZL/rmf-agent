@@ -1,0 +1,53 @@
+name: queue_backlog
+description: >
+  Ten tasks are queued and the queue is growing: tote_3 is offline (stopped reporting 12 minutes ago)
+  and tug_1 is in error with an issue. One underway patrol is running well past its estimate.
+now: "2026-03-02T14:00:00Z"
+robots:
+  tote_1: {status: working, task_id: delivery.dispatch-511, map: L1, x: 16.0, y: 3.0, battery: 0.61}
+  tote_2: {status: working, task_id: patrol.dispatch-520, map: L1, x: 16.0, y: 11.0, battery: 0.55}
+  tote_3: {status: offline, map: L1, x: 8.0, y: 8.0, battery: 0.62, updated: "-12m"}
+  tote_4: {status: working, task_id: delivery.dispatch-512, map: L1, x: 2.0, y: 8.0, battery: 0.70}
+  tote_5: {status: working, task_id: delivery.dispatch-513, map: L2, x: 14.0, y: 4.0, battery: 0.66}
+  tug_1:
+    status: error
+    map: L1
+    x: 9.0
+    y: 2.0
+    battery: 0.77
+    issues:
+      - {category: localization, detail: "Localization confidence below threshold; manual relocalization required"}
+  tug_2: {status: working, task_id: delivery.dispatch-514, map: L1, x: 8.0, y: 8.0, battery: 0.58}
+  tug_3: {status: charging, map: L1, x: 4.0, y: 12.0, battery: 0.29}
+tasks:
+  - {id: delivery.dispatch-511, category: delivery, pickup: dock_1, dropoff: pack_1, requester: wms_bridge, requested: "-14m", started: "-9m", estimate: 10m, status: underway, robot: tote_1, log: [{t: "-9m", text: "Moving to [dock_1]"}, {t: "-2m", text: "Moving to [pack_1]"}]}
+  - {id: delivery.dispatch-512, category: delivery, pickup: dock_2, dropoff: pack_1, requester: wms_bridge, requested: "-12m", started: "-6m", estimate: 10m, status: underway, robot: tote_4, log: [{t: "-6m", text: "Moving to [dock_2]"}]}
+  - {id: delivery.dispatch-513, category: delivery, pickup: dock_1, dropoff: pick_l2_2, requester: wms_bridge, requested: "-20m", started: "-11m", estimate: 16m, status: underway, robot: tote_5, log: [{t: "-11m", text: "Moving to [dock_1]"}, {t: "-3m", text: "Moving to [pick_l2_2]"}]}
+  - {id: delivery.dispatch-514, category: delivery, pickup: staging_a, dropoff: pack_1, requester: wms_bridge, requested: "-10m", started: "-4m", estimate: 9m, status: underway, robot: tug_2, log: [{t: "-4m", text: "Moving to [staging_a]"}]}
+  - id: patrol.dispatch-520
+    category: patrol
+    places: [aisle_3, aisle_7]
+    rounds: 3
+    requester: ops_dashboard
+    requested: "-44m"
+    started: "-40m"
+    estimate: 20m
+    status: underway
+    robot: tote_2
+    log:
+      - {t: "-40m", text: "Moving to [aisle_3]"}
+      - {t: "-24m", text: "Round 1 of 3 complete"}
+      - {t: "-6m", text: "Round 2 of 3 complete"}
+  - {id: delivery.dispatch-530, category: delivery, pickup: dock_1, dropoff: pack_1, requester: wms_bridge, requested: "-55m", estimate: 10m, status: queued}
+  - {id: delivery.dispatch-531, category: delivery, pickup: dock_2, dropoff: pack_1, requester: wms_bridge, requested: "-48m", estimate: 10m, status: queued}
+  - {id: patrol.dispatch-532, category: patrol, places: [staging_a], rounds: 1, requester: ops_dashboard, requested: "-41m", estimate: 6m, status: queued}
+  - {id: delivery.dispatch-533, category: delivery, pickup: dock_1, dropoff: staging_b, requester: wms_bridge, requested: "-33m", estimate: 8m, status: queued}
+  - {id: delivery.dispatch-534, category: delivery, pickup: dock_2, dropoff: pick_l2_1, requester: wms_bridge, requested: "-27m", estimate: 15m, status: queued}
+  - {id: delivery.dispatch-535, category: delivery, pickup: dock_1, dropoff: pack_1, requester: wms_bridge, requested: "-19m", estimate: 10m, status: queued}
+  - {id: delivery.dispatch-536, category: delivery, pickup: dock_2, dropoff: pack_1, requester: wms_bridge, requested: "-12m", estimate: 10m, status: queued}
+  - {id: patrol.dispatch-537, category: patrol, places: [aisle_7], rounds: 1, requester: ops_dashboard, requested: "-8m", estimate: 6m, status: queued}
+  - {id: delivery.dispatch-538, category: delivery, pickup: dock_1, dropoff: staging_a, requester: wms_bridge, requested: "-5m", estimate: 8m, status: queued}
+  - {id: delivery.dispatch-539, category: delivery, pickup: dock_2, dropoff: staging_b, requester: wms_bridge, requested: "-3m", estimate: 8m, status: queued}
+alerts:
+  - {id: alert-5201, t: "-12m", tier: warning, title: Robot offline, subtitle: tote_3, message: "tote_3 stopped reporting state."}
+  - {id: alert-5202, t: "-9m", tier: error, title: Robot error, subtitle: tug_1, message: "tug_1 entered error state: localization lost."}

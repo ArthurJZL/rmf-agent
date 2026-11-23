@@ -1,0 +1,105 @@
+name: nominal
+description: Normal mid-shift state. Nothing is stuck; used for status questions and false-positive checks.
+now: "2026-03-02T14:00:00Z"
+robots:
+  tote_1: {status: working, task_id: delivery.dispatch-101, map: L1, x: 14.0, y: 3.0, battery: 0.74}
+  tote_2: {status: working, task_id: patrol.dispatch-102, map: L1, x: 9.0, y: 8.0, battery: 0.66}
+  tote_3: {status: charging, map: L1, x: 8.0, y: 14.0, battery: 0.41}
+  tote_4: {status: idle, map: L1, x: 8.0, y: 2.0, battery: 0.82}
+  tote_5: {status: idle, map: L2, x: 26.0, y: 10.0, battery: 0.79}
+  tug_1: {status: working, task_id: delivery.dispatch-103, map: L1, x: 5.0, y: 8.0, battery: 0.58}
+  tug_2: {status: idle, map: L1, x: 8.0, y: 8.0, battery: 0.90}
+  tug_3: {status: charging, map: L1, x: 4.0, y: 12.0, battery: 0.37}
+doors:
+  dock_door_1: {mode: open, updated: "-3m"}
+lifts:
+  lift_1: {mode: agv, floor: L1, door: closed, motion: stopped, updated: "-20s"}
+tasks:
+  - id: delivery.dispatch-101
+    category: delivery
+    pickup: dock_1
+    dropoff: pack_1
+    requester: wms_bridge
+    requested: "-9m"
+    started: "-6m"
+    estimate: 10m
+    status: underway
+    robot: tote_1
+    log:
+      - {t: "-6m", text: "Task delivery.dispatch-101 assigned to tote_1"}
+      - {t: "-5m", text: "Moving to [dock_1]"}
+      - {t: "-3m", text: "Picked up payload at [dock_1]"}
+      - {t: "-40s", text: "Moving to [pack_1]"}
+  - id: patrol.dispatch-102
+    category: patrol
+    places: [staging_a, staging_b]
+    rounds: 2
+    requester: ops_dashboard
+    requested: "-7m"
+    started: "-5m"
+    estimate: 12m
+    status: underway
+    robot: tote_2
+    log:
+      - {t: "-5m", text: "Moving to [staging_a]"}
+      - {t: "-2m", text: "Arrived at [staging_a]"}
+      - {t: "-1m", text: "Moving to [staging_b]"}
+  - id: delivery.dispatch-103
+    category: delivery
+    pickup: dock_2
+    dropoff: staging_b
+    requester: wms_bridge
+    requested: "-4m"
+    started: "-2m"
+    estimate: 8m
+    status: underway
+    robot: tug_1
+    log:
+      - {t: "-2m", text: "Moving to [dock_2]"}
+      - {t: "-30s", text: "Picked up payload at [dock_2]"}
+  - id: delivery.dispatch-098
+    category: delivery
+    pickup: dock_1
+    dropoff: pack_1
+    requester: wms_bridge
+    requested: "-41m"
+    started: "-38m"
+    finished: "-27m"
+    estimate: 10m
+    status: completed
+    robot: tote_4
+    log:
+      - {t: "-38m", text: "Moving to [dock_1]"}
+      - {t: "-33m", text: "Picked up payload at [dock_1]"}
+      - {t: "-27m", text: "Dropped off payload at [pack_1]"}
+      - {t: "-27m", text: "Task completed"}
+  - id: patrol.dispatch-099
+    category: patrol
+    places: [aisle_3, aisle_7]
+    rounds: 1
+    requester: ops_dashboard
+    requested: "-35m"
+    started: "-33m"
+    finished: "-21m"
+    estimate: 12m
+    status: completed
+    robot: tug_2
+    log:
+      - {t: "-33m", text: "Moving to [aisle_3]"}
+      - {t: "-21m", text: "Task completed"}
+  - id: patrol.dispatch-105
+    category: patrol
+    places: [aisle_3, pack_1]
+    rounds: 1
+    requester: rmf-agent
+    requested: "-2m"
+    estimate: 9m
+    status: queued
+  - id: delivery.dispatch-106
+    category: delivery
+    pickup: dock_2
+    dropoff: pack_1
+    requester: wms_bridge
+    requested: "-1m"
+    estimate: 10m
+    status: queued

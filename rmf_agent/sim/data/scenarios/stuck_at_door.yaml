@@ -1,0 +1,49 @@
+name: stuck_at_door
+description: tug_2 has been waiting about 8 minutes for fire_door_a, which stopped responding and is reported closed.
+now: "2026-03-02T14:00:00Z"
+robots:
+  tote_1: {status: working, task_id: delivery.dispatch-201, map: L1, x: 14.0, y: 3.0, battery: 0.72}
+  tote_2: {status: idle, map: L1, x: 6.0, y: 14.0, battery: 0.35}
+  tote_3: {status: charging, map: L1, x: 8.0, y: 14.0, battery: 0.52}
+  tug_2: {status: working, task_id: delivery.dispatch-204, map: L1, x: 11.4, y: 10.0, battery: 0.64}
+doors:
+  fire_door_a: {mode: closed, updated: "-8m"}
+tasks:
+  - id: delivery.dispatch-201
+    category: delivery
+    pickup: dock_1
+    dropoff: pack_1
+    requester: wms_bridge
+    requested: "-8m"
+    started: "-5m"
+    estimate: 10m
+    status: underway
+    robot: tote_1
+    log:
+      - {t: "-5m", text: "Moving to [dock_1]"}
+      - {t: "-2m", text: "Picked up payload at [dock_1]"}
+      - {t: "-1m", text: "Moving to [pack_1]"}
+  - id: delivery.dispatch-204
+    category: delivery
+    pickup: staging_a
+    dropoff: aisle_7
+    requester: wms_bridge
+    requested: "-19m"
+    started: "-15m"
+    estimate: 11m
+    status: underway
+    robot: tug_2
+    log:
+      - {t: "-15m", text: "Moving to [staging_a]"}
+      - {t: "-11m", text: "Picked up payload at [staging_a]"}
+      - {t: "-9m", text: "Moving to [aisle_7]"}
+      - {t: "-8m", text: "Requesting door [fire_door_a] to open"}
+      - {t: "-8m", tier: warning, text: "Waiting for door [fire_door_a] to open"}
+alerts:
+  - id: alert-2041
+    t: "-6m"
+    tier: warning
+    title: Door not responding
+    subtitle: fire_door_a
+    message: "Door fire_door_a has not acknowledged an open request for 2 minutes."
+    task_id: delivery.dispatch-204
