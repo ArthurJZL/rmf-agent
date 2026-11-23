@@ -1,0 +1,71 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "batt-risk",
+ "turns": [
+  {
+   "request_digest": "5685ebb8e7b7d07d",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_q7c92mhkmjnh",
+      "name": "fleet_overview",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2016,
+    "output_tokens": 101
+   }
+  },
+  {
+   "request_digest": "285d605720afc9ed",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "recent_alerts_2pygpwkr0eb9",
+      "name": "recent_alerts",
+      "arguments": {
+       "since_min": 60
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2569,
+    "output_tokens": 92
+   }
+  },
+  {
+   "request_digest": "76f1e637ebb323d5",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_rttczbhgrft0",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2707,
+    "output_tokens": 63
+   }
+  },
+  {
+   "request_digest": "393b319dc959a815",
+   "turn": {
+    "text": "Yes, there is a battery risk. \n\n**Critical risk:** tote_4 is working on delivery.dispatch-402 with 11% battery [tote_4] [delivery.dispatch-402]. This triggered a LOW_BATTERY_ON_TASK warning from the stuck robot scan.\n\n**Other concern:** tug_3 is charging but only at 18% battery [tug_3], indicating it was lower before charging started.\n\nNext steps: Consider reassigning tote_4's task or sending it to charge immediately. Monitor tug_3's charge progress.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2930,
+    "output_tokens": 412
+   }
+  }
+ ]
+}

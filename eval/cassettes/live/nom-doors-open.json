@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "nom-doors-open",
+ "turns": [
+  {
+   "request_digest": "96c281abd8637a0b",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_k86zhs166ket",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2015,
+    "output_tokens": 107
+   }
+  },
+  {
+   "request_digest": "81c00927adde91e9",
+   "turn": {
+    "text": "Yes, dock_door_1 on L1 is currently open (has been open for 3 minutes). The other doors (fire_door_a and corridor_door_l2) are closed.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2298,
+    "output_tokens": 193
+   }
+  }
+ ]
+}

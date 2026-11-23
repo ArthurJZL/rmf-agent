@@ -1,0 +1,40 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "backlog-count",
+ "turns": [
+  {
+   "request_digest": "409aa1cc27dda824",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_vfcajmxbs10n",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ],
+       "limit": 100
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2017,
+    "output_tokens": 164
+   }
+  },
+  {
+   "request_digest": "6d2156c3e8dadf51",
+   "turn": {
+    "text": "There are 10 tasks waiting in the queue. The oldest has been waiting 55 minutes (delivery.dispatch-530) and the newest just 3 minutes (delivery.dispatch-539).",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2906,
+    "output_tokens": 126
+   }
+  }
+ ]
+}

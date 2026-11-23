@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "door-infra",
+ "turns": [
+  {
+   "request_digest": "95f690d65eea7fc4",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_ds1m66phyn8c",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2017,
+    "output_tokens": 175
+   }
+  },
+  {
+   "request_digest": "daa6940820c72fcd",
+   "turn": {
+    "text": "Yes, a door is holding things up. fire_door_a on L1 is closed with tug_2 waiting for 8 minutes [tug_2]. All lifts are operational with no waiting robots.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2334,
+    "output_tokens": 226
+   }
+  }
+ ]
+}

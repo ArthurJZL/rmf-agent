@@ -1,0 +1,54 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "door-explain-robot",
+ "turns": [
+  {
+   "request_digest": "2513b62c3b5ec9af",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "explain_robot_41ng4xgpycnr",
+      "name": "explain_robot",
+      "arguments": {
+       "robot": "tug_2"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2020,
+    "output_tokens": 114
+   }
+  },
+  {
+   "request_digest": "29546d80bea08cec",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_psa486b010kh",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2779,
+    "output_tokens": 114
+   }
+  },
+  {
+   "request_digest": "ac977c469258ad61",
+   "turn": {
+    "text": "tug_2 is waiting for fire_door_a to open. The door has been closed for 8 minutes and tug_2 has been waiting since 13:52 [fire_door_a]. There's also a warning alert that the door hasn't acknowledged the open request for 2 minutes [alert-2041]. The door is the blocker preventing movement.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3096,
+    "output_tokens": 215
+   }
+  }
+ ]
+}

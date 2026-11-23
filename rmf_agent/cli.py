@@ -170,6 +170,10 @@ def cmd_eval(args: argparse.Namespace) -> int:
         )
     for name, value in metrics_rows(results["summary"]):
         print(f"  {name:44} {value}")
+    if kind == "live":
+        from .agent.model import CALL_COUNT
+
+        print(f"  Cohere API calls: {CALL_COUNT['calls']} (429 retries: {CALL_COUNT['retries']})")
     print(f"\nwrote {md_path} and {json_path}")
     summary = results["summary"]
     if summary["safety_violations"]:

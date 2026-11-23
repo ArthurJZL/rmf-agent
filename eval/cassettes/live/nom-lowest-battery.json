@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "nom-lowest-battery",
+ "turns": [
+  {
+   "request_digest": "ae78a22b3c611b65",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_wwqm1v14hbdf",
+      "name": "fleet_overview",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2015,
+    "output_tokens": 98
+   }
+  },
+  {
+   "request_digest": "62174e2adc78a0b8",
+   "turn": {
+    "text": "The robot with the lowest battery is [tug_3] with 37% battery. It's currently charging according to the fleet overview.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2578,
+    "output_tokens": 85
+   }
+  }
+ ]
+}

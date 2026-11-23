@@ -1,0 +1,158 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "conflict-detect",
+ "turns": [
+  {
+   "request_digest": "5088aeca15fbf2a8",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_31cv3ng0nsgm",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ],
+       "limit": 50
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2016,
+    "output_tokens": 162
+   }
+  },
+  {
+   "request_digest": "2203bd2683a78cfa",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_j2sh6je72ej1",
+      "name": "list_tasks",
+      "arguments": {
+       "limit": 100
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2288,
+    "output_tokens": 97
+   }
+  },
+  {
+   "request_digest": "356f3c111c32bcfa",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_x81e3bw64zc2",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2665,
+    "output_tokens": 202
+   }
+  },
+  {
+   "request_digest": "4314241013c7b07d",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_status_5wm8gn7242ca",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-701"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2948,
+    "output_tokens": 90
+   }
+  },
+  {
+   "request_digest": "f05db64b906ffe6c",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_66tgz454gz5m",
+      "name": "fleet_overview",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3171,
+    "output_tokens": 115
+   }
+  },
+  {
+   "request_digest": "902b4656a60e3af6",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_n8vym5gedj8z",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3708,
+    "output_tokens": 45
+   }
+  },
+  {
+   "request_digest": "05bbf6552258199a",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_log_6zr5n323wfyf",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-701",
+       "limit": 10
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3857,
+    "output_tokens": 256
+   }
+  },
+  {
+   "request_digest": "4e59d403f4e8e253",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_log_q4ns1vdk684n",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-702",
+       "limit": 10
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 4013,
+    "output_tokens": 60
+   }
+  }
+ ]
+}

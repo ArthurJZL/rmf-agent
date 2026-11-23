@@ -1,0 +1,18 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "out-of-scope",
+ "turns": [
+  {
+   "request_digest": "f0fb9b4582a06278",
+   "turn": {
+    "text": "I can't provide weather information. My tools are for managing robot fleet operations only, not weather data. Questions unrelated to fleet operations are out of scope.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2015,
+    "output_tokens": 124
+   }
+  }
+ ]
+}

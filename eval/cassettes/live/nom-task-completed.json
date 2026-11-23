@@ -1,0 +1,56 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "nom-task-completed",
+ "turns": [
+  {
+   "request_digest": "eac6e5bcbde15afe",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_status_tevkm96s2y6d",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-098"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2016,
+    "output_tokens": 101
+   }
+  },
+  {
+   "request_digest": "2ffe6c62993ed409",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_log_3zhhw1fzx00b",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-098"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2413,
+    "output_tokens": 64
+   }
+  },
+  {
+   "request_digest": "4b5cb3973c8ae561",
+   "turn": {
+    "text": "delivery.dispatch-098 completed successfully. It was assigned to [tote_4], started at 13:22, picked up payload at [dock_1] at 13:27, dropped off at [pack_1] at 13:33, and finished at 13:33. No errors or alerts are associated with this task.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2726,
+    "output_tokens": 255
+   }
+  }
+ ]
+}

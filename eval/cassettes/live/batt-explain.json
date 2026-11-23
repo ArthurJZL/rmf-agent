@@ -1,0 +1,54 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "batt-explain",
+ "turns": [
+  {
+   "request_digest": "59b777df07fb31a6",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "explain_robot_w8a6dq1506a3",
+      "name": "explain_robot",
+      "arguments": {
+       "robot": "tote_4"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2016,
+    "output_tokens": 123
+   }
+  },
+  {
+   "request_digest": "e319927b2f4223ce",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_fx1vwkp13zv1",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2564,
+    "output_tokens": 120
+   }
+  },
+  {
+   "request_digest": "6d0481a5748b634f",
+   "turn": {
+    "text": "tote_4 is working normally but has a low battery warning. It's currently delivering from dock_2 to aisle_7 (7 min into 12 min estimate) with 11% battery (below the 20% recharge threshold). No stuck conditions detected. \n\n**Evidence:** [tote_4] [delivery.dispatch-402] LOW_BATTERY_ON_TASK warning at 11% battery.\n\n**Next step:** Monitor the battery. If it drops further or the task isn't near completion, consider recharging after delivery. No immediate action needed unless the battery critically low.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2787,
+    "output_tokens": 358
+   }
+  }
+ ]
+}

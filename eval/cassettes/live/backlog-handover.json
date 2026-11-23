@@ -1,0 +1,97 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "backlog-handover",
+ "turns": [
+  {
+   "request_digest": "735811cafc68a5c5",
+   "turn": {
+    "text": "1. Call **find_stuck_robots** to identify any robots currently stuck or experiencing issues.  \n2. Call **recent_alerts** to retrieve all active alerts and notifications from the system.  \n3. Call **late_tasks** to list any overdue or pending tasks that need attention.  \n4. Call **door_and_lift_status** to check the current state of doors and lifts across the fleet.  \n5. Compile the handover summary using the data from steps 1\u20114, highlighting any critical issues, ongoing tasks, and infrastructure status.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 463,
+    "output_tokens": 744
+   }
+  },
+  {
+   "request_digest": "4a82a6bcf7658a10",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_redqk08xhhpa",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2181,
+    "output_tokens": 127
+   }
+  },
+  {
+   "request_digest": "ded15848eafc4cd8",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "recent_alerts_d0xa2ajw7y0r",
+      "name": "recent_alerts",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2509,
+    "output_tokens": 61
+   }
+  },
+  {
+   "request_digest": "8fc062b3ff2b6244",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "late_tasks_gwm7z88sh1a4",
+      "name": "late_tasks",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2782,
+    "output_tokens": 51
+   }
+  },
+  {
+   "request_digest": "65ca4594183d43fb",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_0tpypf5fyrpd",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3212,
+    "output_tokens": 46
+   }
+  },
+  {
+   "request_digest": "77fd36a6a2b702af",
+   "turn": {
+    "text": "**Shift Handover Summary - 14:00 UTC**\n\n**Critical Issues:**\n- 2 robots stuck: tote_3 offline with stale state (720s old) [tote_3] and tug_1 in error state with localization lost [tug_1]\n- Active alerts: alert-5202 (tug_1 localization error, 9 min old) and alert-5201 (tote_3 offline, 12 min old)\n- 7 late tasks requiring attention, led by delivery.dispatch-530 (40 min late, queued 55 min) [delivery.dispatch-530]\n\n**Infrastructure Status:**\n- All doors closed and operational (dock_door_1, fire_door_a, corridor_door_l2)\n- Lift_1 idle on L1, in service, no waiting robots\n\n**Next Steps for Incoming Operator:**\n1. Investigate and resolve stuck robots [tote_3] and [tug_1] - manual relocalization may be needed\n2. Address highest priority late task [delivery.dispatch-530] to prevent further delays\n3. Monitor remaining queued tasks that are approaching SLA limits\n4. Infrastructure appears stable - no immediate door/lift interventions required\n\n**Evidence:** [tote_3], [tug_1], [alert-5202], [alert-5201], [delivery.dispatch-530]",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3495,
+    "output_tokens": 710
+   }
+  }
+ ]
+}

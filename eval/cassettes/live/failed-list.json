@@ -1,0 +1,80 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "failed-list",
+ "turns": [
+  {
+   "request_digest": "ff1a830e615e91ac",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_v3xg420nph60",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "failed"
+       ],
+       "limit": 50
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2019,
+    "output_tokens": 219
+   }
+  },
+  {
+   "request_digest": "c275ecb174c4b948",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_log_tf51bxx0krgh",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-611",
+       "since_min": 60,
+       "limit": 20
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2265,
+    "output_tokens": 78
+   }
+  },
+  {
+   "request_digest": "f0616e7d9f9be03f",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "recent_alerts_v3m0thfxbv80",
+      "name": "recent_alerts",
+      "arguments": {
+       "since_min": 60
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2652,
+    "output_tokens": 58
+   }
+  },
+  {
+   "request_digest": "2ed6c2dc88dc0182",
+   "turn": {
+    "text": "One task failed in the last hour:\n\n- **[delivery.dispatch-611]** (tote_1, delivery to aisle_3 \u2192 pack_2) failed at 13:46Z.  \n  - Reason: Route planning error \u2013 \"waypoint is not on the nav graph\" when trying to navigate to pack_2 [delivery.dispatch-611].  \n  - The task was requested by wms_bridge at 13:36Z and started at 13:39Z. The payload remains on tote_1.  \n  - An alert was raised at 13:46Z confirming the failure [alert-6110].\n\nNext step: Verify that the destination \"pack_2\" exists in the navigation graph and is reachable from the current location. If the waypoint name is incorrect, correct the task destination; if the location is missing, add it to the nav graph.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2871,
+    "output_tokens": 370
+   }
+  }
+ ]
+}

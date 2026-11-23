@@ -1,0 +1,39 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "nom-queued",
+ "turns": [
+  {
+   "request_digest": "0e953e8c53b003bc",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_ef9hqyjpq4js",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ]
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2013,
+    "output_tokens": 66
+   }
+  },
+  {
+   "request_digest": "8f44c7a451eaee2b",
+   "turn": {
+    "text": "There are 2 queued tasks:\n\n- **[patrol.dispatch-105]**: Patrol to aisle_3, pack_1 (9 min estimate), waiting 2 min (requested by rmf-agent at 13:58)\n- **[delivery.dispatch-106]**: Delivery to dock_2, pack_1 (10 min estimate), waiting 1 min (requested by wms_bridge at 13:59)",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2285,
+    "output_tokens": 342
+   }
+  }
+ ]
+}

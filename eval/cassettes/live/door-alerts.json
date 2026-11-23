@@ -1,0 +1,37 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "door-alerts",
+ "turns": [
+  {
+   "request_digest": "7cb375bffc7f5af0",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "recent_alerts_5admvmjnrqx0",
+      "name": "recent_alerts",
+      "arguments": {
+       "since_min": 60
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2017,
+    "output_tokens": 106
+   }
+  },
+  {
+   "request_digest": "e16bb8ad8dc7b932",
+   "turn": {
+    "text": "Yes, there's one alert you should check:\n\n**Alert [alert-2041]** - 6 minutes old\n- Door fire_door_a not responding\n- Has not acknowledged an open request for 2 minutes\n- Associated with task [delivery.dispatch-204]\n- Level: warning\n\nThis could block robots that need to use fire_door_a. Check the door's current status and see if any robots are waiting on it.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2240,
+    "output_tokens": 316
+   }
+  }
+ ]
+}

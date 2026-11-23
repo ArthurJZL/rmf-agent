@@ -52,7 +52,9 @@ FINAL = {
 def test_cohere_model_round_trip_through_the_sdk(toolbox_for):
     requests = []
     model = CohereModel(
-        "command-a-plus-05-2026", client=cohere_client([TOOL_CALL, FINAL], requests)
+        "command-a-plus-05-2026",
+        client=cohere_client([TOOL_CALL, FINAL], requests),
+        min_interval_s=0,
     )
     agent = Agent(model, toolbox_for("stuck_at_door"))
     result = agent.ask(agent.new_session(), "Which robot is stuck?")
@@ -65,7 +67,7 @@ def test_cohere_model_round_trip_through_the_sdk(toolbox_for):
     assert [m["role"] for m in second["messages"]] == ["system", "user", "assistant", "tool"]
     assistant, tool = second["messages"][2], second["messages"][3]
     assert assistant["tool_calls"][0]["id"] == "tc_1"
-    assert assistant["tool_plan"] == "I will scan the fleet."
+    assert "tool_plan" not in assistant  # newer Command models reject it in history
     assert tool["tool_call_id"] == "tc_1"
     assert json.loads(tool["content"][0]["text"])["stuck"][0]["robot"] == "tug_2"
 

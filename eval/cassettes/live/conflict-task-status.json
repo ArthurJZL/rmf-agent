@@ -1,0 +1,37 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "conflict-task-status",
+ "turns": [
+  {
+   "request_digest": "fcdf67d97348e187",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_status_sd8xes75jvg1",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-701"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2018,
+    "output_tokens": 93
+   }
+  },
+  {
+   "request_digest": "306673b744ba7481",
+   "turn": {
+    "text": "Task delivery.dispatch-701 is **queued** [delivery.dispatch-701]:\n- Requested at 13:54, estimate 8 min, currently waiting 6 min\n- Destinations: dock_2, staging_b\n- No alerts, no recent log entries\n- Dispatch status: queued\n\nThe task is waiting normally and hasn't exceeded its estimate.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2241,
+    "output_tokens": 257
+   }
+  }
+ ]
+}

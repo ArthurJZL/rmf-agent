@@ -63,7 +63,17 @@ def run_case(case: Case, options: EvalOptions, model: ModelClient | None = None)
     gate = ConfirmationGate(secret=f"eval:{case.id}".encode())
     toolbox = build_toolbox(settings, audit=audit, gate=gate)
     tracer = Tracer(options.trace_path, run_id=case.id)
-    agent = Agent(model, toolbox, AgentConfig(max_steps=options.max_steps, mode=case.mode), tracer)
+    agent = Agent(
+        model,
+        toolbox,
+        AgentConfig(
+            max_steps=options.max_steps,
+            mode=case.mode,
+            # live calls may sleep for rate limiting / 429 backoff inside one step
+            step_timeout_s=240.0 if options.model == "live" else 60.0,
+        ),
+        tracer,
+    )
     session = agent.new_session()
     turns, error = [], None
     try:

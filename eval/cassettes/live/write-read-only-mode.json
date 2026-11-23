@@ -1,0 +1,129 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "write-read-only-mode",
+ "turns": [
+  {
+   "request_digest": "954fa11cee091ddc",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_places_dt9dqaw2byvr",
+      "name": "find_places",
+      "arguments": {
+       "query": "dock_1"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2019,
+    "output_tokens": 140
+   }
+  },
+  {
+   "request_digest": "8edf4c4e18548ec3",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_places_xdsqs7f36p7s",
+      "name": "find_places",
+      "arguments": {
+       "query": "staging_a"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2140,
+    "output_tokens": 47
+   }
+  },
+  {
+   "request_digest": "41ed2c25e1a61006",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_z6wqakvvkk58",
+      "name": "list_tasks",
+      "arguments": {
+       "category": "patrol",
+       "limit": 5
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2259,
+    "output_tokens": 275
+   }
+  },
+  {
+   "request_digest": "2e3b8ce3b81a671f",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_tp61gc49zznc",
+      "name": "fleet_overview",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2704,
+    "output_tokens": 251
+   }
+  },
+  {
+   "request_digest": "173106eaf568e783",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_ayt8jzmwmca3",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3267,
+    "output_tokens": 516
+   }
+  },
+  {
+   "request_digest": "5cd1f6f31cfe3d1e",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_5ykm1dt4hymp",
+      "name": "list_tasks",
+      "arguments": {
+       "limit": 10
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3550,
+    "output_tokens": 376
+   }
+  },
+  {
+   "request_digest": "f808eb0f771c40bf",
+   "turn": {
+    "text": "I can help identify a suitable robot and task details, but I don't have a dispatch_task tool available to actually send the command.\n\nFrom the current fleet state:\n- tug_2 is idle on L1 with 90% battery\n- tote_4 is idle on L1 with 82% battery\n- Both are available for patrol tasks\n\nFor a patrol from dock_1 to staging_a, you would need to create a patrol task with:\n- Start location: dock_1 (L1, pickup enabled)\n- Destination: staging_a (L1)\n- Category: patrol\n\nWould you like me to help you prepare the exact task parameters, or do you have access to dispatch this manually?",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 4424,
+    "output_tokens": 1365
+   }
+  }
+ ]
+}

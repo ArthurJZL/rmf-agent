@@ -1,0 +1,56 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "lift-explain-robot",
+ "turns": [
+  {
+   "request_digest": "89aa7de322287833",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "explain_robot_zrgvgpp1me2j",
+      "name": "explain_robot",
+      "arguments": {
+       "robot": "tote_5"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2016,
+    "output_tokens": 184
+   }
+  },
+  {
+   "request_digest": "51795de706cfc5c8",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_status_p512mw6e39cd",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-311"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2769,
+    "output_tokens": 72
+   }
+  },
+  {
+   "request_digest": "d008a49a916df1c1",
+   "turn": {
+    "text": "tote_5 is blocked and waiting on lift_1. Its current task [delivery.dispatch-311] shows it requested the lift at 13:47 but the lift is offline and not accepting requests [lift_1] [alert-?] (from log entry at 13:48). The robot has been waiting 12+ minutes for the lift to become available. Next step: check lift_1 status and bring it back online.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3172,
+    "output_tokens": 264
+   }
+  }
+ ]
+}

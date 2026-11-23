@@ -1,0 +1,131 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "lift-why-l2",
+ "turns": [
+  {
+   "request_digest": "e49375be74347638",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_6zbb0f1bqt71",
+      "name": "find_stuck_robots",
+      "arguments": {
+       "stale_after_s": 60,
+       "no_progress_min": 10
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2017,
+    "output_tokens": 175
+   }
+  },
+  {
+   "request_digest": "eeee13ae949c1f34",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_s3j2jc574h7p",
+      "name": "fleet_overview",
+      "arguments": {
+       "fleet": "L2"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2354,
+    "output_tokens": 102
+   }
+  },
+  {
+   "request_digest": "6d8b3ed34b093e50",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "list_tasks_yf96vmecenp7",
+      "name": "list_tasks",
+      "arguments": {
+       "limit": 50
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2452,
+    "output_tokens": 76
+   }
+  },
+  {
+   "request_digest": "4edac10c56f38d74",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_status_z6y1qvf6mfpm",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "patrol.dispatch-312"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2956,
+    "output_tokens": 82
+   }
+  },
+  {
+   "request_digest": "3ce06fbe6ea47005",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_4wf4z6z5j7mc",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3180,
+    "output_tokens": 129
+   }
+  },
+  {
+   "request_digest": "5358df091e63cf1a",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "recent_alerts_6mr92e9g4y1n",
+      "name": "recent_alerts",
+      "arguments": {
+       "since_min": 60
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3498,
+    "output_tokens": 199
+   }
+  },
+  {
+   "request_digest": "5c1940270b195319",
+   "turn": {
+    "text": "L2 tasks are blocked because lift_1 is offline (out of service). \n\nEvidence:\n- patrol.dispatch-312 (destination pick_l2_2) has been queued for 18 minutes\n- delivery.dispatch-313 (destination pick_l2_1) has been queued for 11 minutes  \n- Lift lift_1 is offline and not accepting requests [alert-3101]\n- tote_5 is stuck waiting on lift_1 for 12 minutes [tote_5]\n- corridor_door_l2 is closed but no robots are waiting on it\n\nThe offline lift prevents robots from accessing L2 level, so tasks destined for L2 locations remain queued. Restore lift_1 to service to unblock L2 operations.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3709,
+    "output_tokens": 655
+   }
+  }
+ ]
+}

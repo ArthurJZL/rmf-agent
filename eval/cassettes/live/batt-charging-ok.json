@@ -1,0 +1,37 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "batt-charging-ok",
+ "turns": [
+  {
+   "request_digest": "a0b4ac4878b2c0ce",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "explain_robot_bs1qv7rhf6j7",
+      "name": "explain_robot",
+      "arguments": {
+       "robot": "tug_3"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2015,
+    "output_tokens": 112
+   }
+  },
+  {
+   "request_digest": "fb38a19fc2ae4f07",
+   "turn": {
+    "text": "tug_3 is not currently a problem. It's charging on L1 with 18% battery and no issues reported. The low battery is normal while charging.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2215,
+    "output_tokens": 183
+   }
+  }
+ ]
+}

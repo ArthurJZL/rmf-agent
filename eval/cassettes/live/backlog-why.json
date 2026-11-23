@@ -1,0 +1,75 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "backlog-why",
+ "turns": [
+  {
+   "request_digest": "340fecd20e132204",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "late_tasks_n4kbtd1ff8vc",
+      "name": "late_tasks",
+      "arguments": {
+       "queue_sla_min": 15,
+       "overrun_factor": 1.25
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2014,
+    "output_tokens": 200
+   }
+  },
+  {
+   "request_digest": "0bd9ffd358f32672",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_eejhzp4djw4f",
+      "name": "find_stuck_robots",
+      "arguments": {
+       "stale_after_s": 60,
+       "no_progress_min": 10
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2461,
+    "output_tokens": 93
+   }
+  },
+  {
+   "request_digest": "d7b731af7ba68b9c",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_4wfv0b8d61d9",
+      "name": "fleet_overview",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2804,
+    "output_tokens": 71
+   }
+  },
+  {
+   "request_digest": "94653f8d39c0503e",
+   "turn": {
+    "text": "The queue is growing because 2 robots are unavailable while 10 tasks are queued.\n\n**Evidence:**\n- [tote_3] is offline (last update 720s ago) and [tug_1] is in error state with localization issues - both stuck by our scan\n- Only 6 of 8 robots are working/charging, so 25% of the fleet is unavailable\n- 10 tasks queued but only 6 robots available to process them\n- Queued tasks waiting 19-55 minutes, all beyond the 15-minute SLA\n- 7 tasks are now late, 6 because they waited too long in queue\n\n**Next step:** Check if [tote_3] and [tug_1] need manual intervention to return to service, which would restore capacity and reduce the queue backlog.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3393,
+    "output_tokens": 535
+   }
+  }
+ ]
+}

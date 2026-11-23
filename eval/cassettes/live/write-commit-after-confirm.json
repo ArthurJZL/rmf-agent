@@ -1,0 +1,80 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "write-commit-after-confirm",
+ "turns": [
+  {
+   "request_digest": "7c7f2fe6bc961236",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "dispatch_task_pz98g3j6c5bw",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "patrol",
+       "places": [
+        "dock_1",
+        "staging_a"
+       ],
+       "rounds": 2,
+       "dry_run": true
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2558,
+    "output_tokens": 178
+   }
+  },
+  {
+   "request_digest": "85e4055732925519",
+   "turn": {
+    "text": "Here's the patrol plan for your review:\n\n**Plan:** Dispatch a patrol from dock_1 to staging_a, 2 rounds, on any fleet\n**Confirm token:** ct_aee733ff4ece1b19a6cef488\n**Expires in:** 120 seconds\n\nPlease confirm if you want me to execute this patrol. Once you confirm, I'll dispatch it with dry_run=false using this confirm token.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2806,
+    "output_tokens": 171
+   }
+  },
+  {
+   "request_digest": "1db945f3241652a4",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "dispatch_task_23dfnww168hy",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "patrol",
+       "places": [
+        "dock_1",
+        "staging_a"
+       ],
+       "rounds": 2,
+       "dry_run": false,
+       "confirm_token": "ct_aee733ff4ece1b19a6cef488"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2907,
+    "output_tokens": 107
+   }
+  },
+  {
+   "request_digest": "9cc6471c6f1ae6a6",
+   "turn": {
+    "text": "Patrol dispatched successfully.\n\n**Task ID:** patrol.dispatch-900\n**Status:** queued\n**Route:** dock_1 \u2192 staging_a, 2 rounds\n\nThe task is now in the queue and will be assigned to an available robot.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3052,
+    "output_tokens": 135
+   }
+  }
+ ]
+}

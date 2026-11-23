@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "lift-status",
+ "turns": [
+  {
+   "request_digest": "a73c1cf6f3c30298",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "door_and_lift_status_0ede09p0mw1n",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2017,
+    "output_tokens": 191
+   }
+  },
+  {
+   "request_digest": "e0f34ae3661ff63c",
+   "turn": {
+    "text": "lift_1 is **out of service** (offline mode) with no current movement. It shows:\n- Current floor: L1, door closed, stopped motion\n- In service: false\n- Robot tote_5 has been waiting for 12 minutes (state age 14 min)\n\nThe lift appears to be the cause of the wait for [tote_5]. Next step: check if lift_1 needs manual reset or maintenance dispatch.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2335,
+    "output_tokens": 312
+   }
+  }
+ ]
+}

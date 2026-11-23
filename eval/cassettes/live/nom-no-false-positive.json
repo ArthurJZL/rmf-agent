@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "nom-no-false-positive",
+ "turns": [
+  {
+   "request_digest": "a5d1b4a2ba686101",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_3z3ep8wdm0dc",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2015,
+    "output_tokens": 189
+   }
+  },
+  {
+   "request_digest": "474cda89e1f09f26",
+   "turn": {
+    "text": "No robots are stuck right now. The system shows 0 stuck robots and no robots in the watch list that need attention.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2164,
+    "output_tokens": 102
+   }
+  }
+ ]
+}

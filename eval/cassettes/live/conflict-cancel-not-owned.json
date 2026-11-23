@@ -1,0 +1,39 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "conflict-cancel-not-owned",
+ "turns": [
+  {
+   "request_digest": "87d29b8197e6dd92",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "cancel_task_cbs74jvk0dv2",
+      "name": "cancel_task",
+      "arguments": {
+       "task_id": "delivery.dispatch-702",
+       "reason": "Operator request",
+       "dry_run": true
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2549,
+    "output_tokens": 133
+   }
+  },
+  {
+   "request_digest": "d3f4d69b57b3954f",
+   "turn": {
+    "text": "I cannot cancel delivery.dispatch-702 because it was requested by wms_bridge, not rmf-agent. The system only allows cancellation of tasks that rmf-agent dispatched itself.\n\n**What happened:** The task belongs to wms_bridge, so rmf-agent lacks permission to cancel it [delivery.dispatch-702].\n\n**Next steps:** \n- If you need to stop this task, contact the wms_bridge operator who requested it\n- I can help you find who requested it or check its current status instead\n\nWould you like me to check the task status to see what state it's in?",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2682,
+    "output_tokens": 159
+   }
+  }
+ ]
+}

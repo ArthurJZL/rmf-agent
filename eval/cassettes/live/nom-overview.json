@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "nom-overview",
+ "turns": [
+  {
+   "request_digest": "aa21495c5c3364ef",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "fleet_overview_90cnmbswsajj",
+      "name": "fleet_overview",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2019,
+    "output_tokens": 107
+   }
+  },
+  {
+   "request_digest": "a5671e7822d4c14d",
+   "turn": {
+    "text": "There are 8 robots total. Here's what they're doing:\n\n**Working (3 robots):**\n- tote_1: delivery.dispatch-101 (L1, 74% battery)\n- tote_2: patrol.dispatch-102 (L1, 66% battery) \n- tug_1: delivery.dispatch-103 (L1, 58% battery)\n\n**Charging (2 robots):**\n- tote_3 (L1, 41% battery)\n- tug_3 (L1, 37% battery - lowest battery)\n\n**Idle (3 robots):**\n- tote_4 (L1, 82% battery)\n- tote_5 (L2, 79% battery)\n- tug_2 (L1, 90% battery)\n\nAll robots are on L1 except tote_5 on L2. No robots have issues currently.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2582,
+    "output_tokens": 529
+   }
+  }
+ ]
+}

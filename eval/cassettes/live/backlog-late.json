@@ -1,0 +1,35 @@
+{
+ "model": "command-a-plus-05-2026",
+ "fake_model": false,
+ "case_id": "backlog-late",
+ "turns": [
+  {
+   "request_digest": "ebf9302ccc9bbf16",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "late_tasks_ffzfnta38r01",
+      "name": "late_tasks",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2013,
+    "output_tokens": 94
+   }
+  },
+  {
+   "request_digest": "e4d638133fed02ee",
+   "turn": {
+    "text": "There are 7 late tasks:\n\n**Queued too long:**\n- [delivery.dispatch-530] - 40 min late (55 min wait)\n- [delivery.dispatch-531] - 33 min late (48 min wait)\n- [patrol.dispatch-532] - 26 min late (41 min wait)\n- [delivery.dispatch-533] - 18 min late (33 min wait)\n- [delivery.dispatch-534] - 12 min late (27 min wait)\n- [delivery.dispatch-535] - 4 min late (19 min wait)\n\n**Over estimate:**\n- [patrol.dispatch-520] - 20 min late, running 40 min vs 20 min estimate (assigned to [tote_2])\n\nNext step: Check why delivery tasks are queuing too long - likely door/lift bottlenecks or insufficient robots for demand.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2443,
+    "output_tokens": 523
+   }
+  }
+ ]
+}
