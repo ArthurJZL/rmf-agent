@@ -51,3 +51,5 @@ ignore = ["RUF001", "RUF002", "RUF003"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# Emitted inside the cohere SDK, not by this project.
+filterwarnings = ["ignore:The `__fields__` attribute is deprecated:DeprecationWarning"]
