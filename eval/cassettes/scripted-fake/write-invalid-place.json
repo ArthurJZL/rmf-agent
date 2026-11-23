@@ -1,0 +1,40 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "write-invalid-place",
+ "turns": [
+  {
+   "request_digest": "442575dfb6c008c8",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling dispatch_task to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "patrol",
+       "places": [
+        "roof"
+       ]
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "f716eee636cc3c88",
+   "turn": {
+    "text": "The request was rejected (validation_failed): unknown places: ['roof']; use find_places to list valid ones. Nothing was sent.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "batt-charging-ok",
+ "turns": [
+  {
+   "request_digest": "a0b4ac4878b2c0ce",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling explain_robot to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "explain_robot",
+      "arguments": {
+       "robot": "tug_3"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "930ba6f11913e077",
+   "turn": {
+    "text": "[tug_3] is charging, battery 18%, on L1. No rule flags anything abnormal.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

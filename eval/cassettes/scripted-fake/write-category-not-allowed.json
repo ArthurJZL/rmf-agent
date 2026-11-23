@@ -1,0 +1,40 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "write-category-not-allowed",
+ "turns": [
+  {
+   "request_digest": "bc78426901965c53",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling dispatch_task to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "clean",
+       "places": [
+        "aisle_3"
+       ]
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "dfc47085ffb16f3c",
+   "turn": {
+    "text": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Nothing was sent.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

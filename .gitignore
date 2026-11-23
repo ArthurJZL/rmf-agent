@@ -1,9 +1,9 @@
-.venv/
-__pycache__/
 *.pyc
-dist/
 .pytest_cache/
 .ruff_cache/
+.venv/
+__pycache__/
+dist/
+eval/results/live/
 rmf-agent-audit.jsonl
 traces/
-eval/results/live/

@@ -1,0 +1,58 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "failed-list",
+ "turns": [
+  {
+   "request_digest": "ff1a830e615e91ac",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling list_tasks to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "failed"
+       ]
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "b0302736426e2553",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling task_log to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_2",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-611"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "62eb07a60eaa00bf",
+   "turn": {
+    "text": "1 task(s) failed. [delivery.dispatch-611] is failed (delivery on [tote_1], requested by wms_bridge, aisle_3 -> pack_2), finished 2026-03-02T13:46:00Z. Reason: \"Failed to plan a route to [pack_2]: waypoint is not on the nav graph\".",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "nom-lowest-battery",
+ "turns": [
+  {
+   "request_digest": "ae78a22b3c611b65",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling fleet_overview, find_stuck_robots to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "fleet_overview",
+      "arguments": {}
+     },
+     {
+      "id": "fake_call_2",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "78e2cdb364e59a7f",
+   "turn": {
+    "text": "Lowest battery: [tug_3] at 37% (charging). No robot is below the 20% threshold outside a charger.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

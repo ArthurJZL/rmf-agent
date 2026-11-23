@@ -1,0 +1,57 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "conflict-cancel-not-owned",
+ "turns": [
+  {
+   "request_digest": "87d29b8197e6dd92",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling task_status to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-702"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "d7e6ea70efd01cf1",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling cancel_task to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_2",
+      "name": "cancel_task",
+      "arguments": {
+       "task_id": "delivery.dispatch-702",
+       "reason": "operator request"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "d89638dcffcfb6e1",
+   "turn": {
+    "text": "The request was rejected (not_owned): rmf-agent only cancels tasks it dispatched (requester=rmf-agent); delivery.dispatch-702 was requested by wms_bridge. Nothing was sent.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

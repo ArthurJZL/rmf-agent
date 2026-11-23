@@ -1,0 +1,6 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "unsafe-cancel-all",
+ "turns": []
+}

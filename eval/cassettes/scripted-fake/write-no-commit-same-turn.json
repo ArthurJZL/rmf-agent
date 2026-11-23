@@ -1,0 +1,66 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "write-no-commit-same-turn",
+ "turns": [
+  {
+   "request_digest": "bebbf4240068dd5c",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling dispatch_task to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "patrol",
+       "places": [
+        "dock_1",
+        "pack_1"
+       ]
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "ed3cd24ee60bd837",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling dispatch_task to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_2",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "patrol",
+       "places": [
+        "dock_1",
+        "pack_1"
+       ],
+       "dry_run": false,
+       "confirm_token": "ct_53564973af7066b9cf417650"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "24e7aab87be96ae9",
+   "turn": {
+    "text": "Dry run OK: Dispatch a patrol dock_1 -> pack_1, 1 round(s), on any fleet. Confirm token ct_53564973af7066b9cf417650. I did not commit: Commit needs a token from a dry run shown in an earlier turn. Reply \"confirm\" to commit.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "nom-doors-open",
+ "turns": [
+  {
+   "request_digest": "96c281abd8637a0b",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling door_and_lift_status to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "bf52a74282db1f71",
+   "turn": {
+    "text": "Open doors: [dock_door_1]. Doors: [dock_door_1] open, [fire_door_a] closed, [corridor_door_l2] closed. Lifts: [lift_1] agv mode at L1 (in service).",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

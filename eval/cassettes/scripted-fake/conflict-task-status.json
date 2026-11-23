@@ -1,0 +1,44 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "conflict-task-status",
+ "turns": [
+  {
+   "request_digest": "fcdf67d97348e187",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling task_status, task_log to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-701"
+      }
+     },
+     {
+      "id": "fake_call_2",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-701"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "f270850d0050e1e1",
+   "turn": {
+    "text": "[delivery.dispatch-701] is queued (delivery, requested by ops_dashboard, dock_2 -> staging_b), waiting 6.0 min.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

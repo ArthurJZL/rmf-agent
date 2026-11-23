@@ -1,0 +1,40 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "backlog-count",
+ "turns": [
+  {
+   "request_digest": "409aa1cc27dda824",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling list_tasks to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ],
+       "limit": 50
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "7af903159c7d74d2",
+   "turn": {
+    "text": "10 task(s) queued: [delivery.dispatch-530] waiting 55.0 min (dock_1 -> pack_1); [delivery.dispatch-531] waiting 48.0 min (dock_2 -> pack_1); [patrol.dispatch-532] waiting 41.0 min (staging_a); [delivery.dispatch-533] waiting 33.0 min (dock_1 -> staging_b); [delivery.dispatch-534] waiting 27.0 min (dock_2 -> pick_l2_1); [delivery.dispatch-535] waiting 19.0 min (dock_1 -> pack_1); [delivery.dispatch-536] waiting 12.0 min (dock_2 -> pack_1); [patrol.dispatch-537] waiting 8.0 min (aisle_7); [delivery.dispatch-538] waiting 5.0 min (dock_1 -> staging_a); [delivery.dispatch-539] waiting 3.0 min (dock_2 -> staging_b).",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

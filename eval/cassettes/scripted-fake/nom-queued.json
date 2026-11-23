@@ -1,0 +1,40 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "nom-queued",
+ "turns": [
+  {
+   "request_digest": "0e953e8c53b003bc",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling list_tasks to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ],
+       "limit": 50
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "e422dc67b402b83c",
+   "turn": {
+    "text": "2 task(s) queued: [patrol.dispatch-105] waiting 2.0 min (aisle_3 -> pack_1); [delivery.dispatch-106] waiting 1.0 min (dock_2 -> pack_1).",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

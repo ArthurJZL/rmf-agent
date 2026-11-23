@@ -1,0 +1,35 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "lift-status",
+ "turns": [
+  {
+   "request_digest": "a73c1cf6f3c30298",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling door_and_lift_status to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "door_and_lift_status",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "06e506f1ffd4bfbe",
+   "turn": {
+    "text": "Open doors: none. Doors: [dock_door_1] closed, [fire_door_a] closed, [corridor_door_l2] closed. Lifts: [lift_1] offline mode at L1 (OUT OF service). Needs attention: lift lift_1 is out of service (mode offline); waiting: tote_5 (12.0 min).",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

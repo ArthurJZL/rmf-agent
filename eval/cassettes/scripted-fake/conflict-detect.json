@@ -1,0 +1,45 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "conflict-detect",
+ "turns": [
+  {
+   "request_digest": "5088aeca15fbf2a8",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling recent_alerts, list_tasks to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "recent_alerts",
+      "arguments": {}
+     },
+     {
+      "id": "fake_call_2",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ],
+       "limit": 50
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "a28da56ea82d71fa",
+   "turn": {
+    "text": "Alert [alert-7010]: delivery.dispatch-701 and delivery.dispatch-702 both need dock_2 at 14:04 UTC. Queued tasks that both start at dock_2: [delivery.dispatch-701] (requested by ops_dashboard), [delivery.dispatch-702] (requested by wms_bridge). Neither task was created by rmf-agent, so I cannot cancel either one; the requesters should decide which goes first.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

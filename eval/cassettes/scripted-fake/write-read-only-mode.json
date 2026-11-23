@@ -1,0 +1,18 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "write-read-only-mode",
+ "turns": [
+  {
+   "request_digest": "954fa11cee091ddc",
+   "turn": {
+    "text": "Writes are disabled in this session (read-only mode), so I cannot dispatch tasks. Restart with --allow-writes to enable the guarded dispatch tool.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

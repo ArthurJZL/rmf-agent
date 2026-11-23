@@ -1,0 +1,40 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "batt-risk",
+ "turns": [
+  {
+   "request_digest": "5685ebb8e7b7d07d",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling fleet_overview, find_stuck_robots to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "fleet_overview",
+      "arguments": {}
+     },
+     {
+      "id": "fake_call_2",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "6c431969a29822c6",
+   "turn": {
+    "text": "Lowest battery: [tote_4] at 11% (working). [tote_4] is at 11% while working on [delivery.dispatch-402], below the 20% threshold. [tug_3] is at 18% and charging. Suggested next step: send the robot to a charger after its current task, or reassign the task if the dropoff is far.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

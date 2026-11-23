@@ -1,0 +1,44 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "failed-what-happened",
+ "turns": [
+  {
+   "request_digest": "baa5f6e37fd7ffd0",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling task_status, task_log to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-611"
+      }
+     },
+     {
+      "id": "fake_call_2",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-611"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "753ced0cbc3a36a1",
+   "turn": {
+    "text": "[delivery.dispatch-611] is failed (delivery on [tote_1], requested by wms_bridge, aisle_3 -> pack_2), finished 2026-03-02T13:46:00Z. Failure reason from the log: \"Failed to plan a route to [pack_2]: waypoint is not on the nav graph\" (2026-03-02T13:46:00Z) / \"Task failed; payload still on tote_1\" (2026-03-02T13:46:00Z). Related alert: [alert-6110].",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

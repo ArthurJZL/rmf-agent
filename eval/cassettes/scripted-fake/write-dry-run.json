@@ -1,0 +1,42 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "write-dry-run",
+ "turns": [
+  {
+   "request_digest": "7c7f2fe6bc961236",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling dispatch_task to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "dispatch_task",
+      "arguments": {
+       "category": "patrol",
+       "places": [
+        "dock_1",
+        "staging_a"
+       ],
+       "rounds": 2
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "07fa00fa9d37958d",
+   "turn": {
+    "text": "Dry run OK: Dispatch a patrol dock_1 -> staging_a, 2 round(s), on any fleet. Confirm token ct_94ad64a2c8aefd88c81800a1 (expires in 120 s). Reply \"confirm\" to commit; nothing has been sent yet.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}

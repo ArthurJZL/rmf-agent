@@ -1,0 +1,70 @@
+{
+ "model": "scripted-fake",
+ "fake_model": true,
+ "case_id": "backlog-handover",
+ "turns": [
+  {
+   "request_digest": "735811cafc68a5c5",
+   "turn": {
+    "text": "1. fleet_overview: robot counts and states\n2. find_stuck_robots: anything stuck or unavailable\n3. late_tasks: late work\n4. list_tasks status=failed: failures to report\n5. recent_alerts: open alerts\n6. Write the handover with citations",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "15a899397bb82989",
+   "turn": {
+    "text": "",
+    "tool_plan": "Calling fleet_overview, find_stuck_robots, late_tasks, list_tasks, recent_alerts to answer the operator.",
+    "tool_calls": [
+     {
+      "id": "fake_call_1",
+      "name": "fleet_overview",
+      "arguments": {}
+     },
+     {
+      "id": "fake_call_2",
+      "name": "find_stuck_robots",
+      "arguments": {}
+     },
+     {
+      "id": "fake_call_3",
+      "name": "late_tasks",
+      "arguments": {}
+     },
+     {
+      "id": "fake_call_4",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "failed"
+       ]
+      }
+     },
+     {
+      "id": "fake_call_5",
+      "name": "recent_alerts",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  },
+  {
+   "request_digest": "fdbc09b40b6bad86",
+   "turn": {
+    "text": "Shift handover (2026-03-02T14:00:00Z).\nFleet: 8 robots, 1 charging, 1 error, 1 offline, 5 working.\nUnavailable or stuck: [tote_3] is offline. [tote_3] has not reported state for 720 s. [tug_1] is in error. [tug_1] reports: localization: Localization confidence below threshold; manual relocalization required.\nLate work: 7 of 15 open tasks are late (rules: queued over 15 min, or running over 1.25x the estimate): [delivery.dispatch-530] queued 55.0 min (40.0 min past SLA); [delivery.dispatch-531] queued 48.0 min (33.0 min past SLA); [patrol.dispatch-532] queued 41.0 min (26.0 min past SLA); and 4 more.\nFailed tasks: none.\nOpen alerts: [alert-5202] Robot error, [alert-5201] Robot offline.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": null,
+    "output_tokens": null
+   }
+  }
+ ]
+}
