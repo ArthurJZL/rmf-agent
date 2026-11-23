@@ -14,6 +14,7 @@ from pydantic import Field
 
 from ..api import ApiError, RmfApi
 from ..config import Settings
+from ..sim.scenario import DELIVERY_PAYLOAD
 from .common import OPEN_STATUSES, TERMINAL_STATUSES, StrList
 from .gate import ConfirmationGate
 from .read import ReadTools
@@ -160,8 +161,16 @@ class WriteTools:
             description = {"places": args["places"] or [], "rounds": args["rounds"]}
         else:
             description = {
-                "pickup": {"place": args["pickup"], "handler": args["pickup"], "payload": []},
-                "dropoff": {"place": args["dropoff"], "handler": args["dropoff"], "payload": []},
+                "pickup": {
+                    "place": args["pickup"],
+                    "handler": args["pickup"],
+                    "payload": dict(DELIVERY_PAYLOAD),
+                },
+                "dropoff": {
+                    "place": args["dropoff"],
+                    "handler": args["dropoff"],
+                    "payload": dict(DELIVERY_PAYLOAD),
+                },
             }
         request = {
             "category": args["category"],

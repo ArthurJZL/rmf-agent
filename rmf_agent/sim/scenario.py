@@ -32,6 +32,10 @@ LIFT_MODES = {"unknown": 0, "human": 1, "agv": 2, "fire": 3, "offline": 4, "emer
 # rmf_building_map_msgs/Param types.
 PARAM_STRING, PARAM_INT, PARAM_DOUBLE, PARAM_BOOL = 1, 2, 3, 4
 
+# rmf-web's dashboard builds delivery payloads as {sku, quantity}
+# (rmf-dashboard-framework/src/components/tasks/types/delivery.tsx).
+DELIVERY_PAYLOAD = {"sku": "tote", "quantity": 1}
+
 _DURATION = re.compile(r"^([+-]?)(\d+(?:\.\d+)?)(ms|s|m|h)$")
 _UNIT_MS = {"ms": 1, "s": 1_000, "m": 60_000, "h": 3_600_000}
 
@@ -258,8 +262,16 @@ def task_description(spec: dict[str, Any]) -> dict[str, Any]:
         return {"places": list(spec["places"]), "rounds": int(spec.get("rounds", 1))}
     if spec["category"] == "delivery":
         return {
-            "pickup": {"place": spec["pickup"], "handler": spec["pickup"], "payload": []},
-            "dropoff": {"place": spec["dropoff"], "handler": spec["dropoff"], "payload": []},
+            "pickup": {
+                "place": spec["pickup"],
+                "handler": spec["pickup"],
+                "payload": dict(DELIVERY_PAYLOAD),
+            },
+            "dropoff": {
+                "place": spec["dropoff"],
+                "handler": spec["dropoff"],
+                "payload": dict(DELIVERY_PAYLOAD),
+            },
         }
     raise ValueError(f"unsupported task category in scenario: {spec['category']}")
 
