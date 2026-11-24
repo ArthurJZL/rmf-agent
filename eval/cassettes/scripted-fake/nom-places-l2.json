@@ -4,7 +4,7 @@
  "case_id": "nom-places-l2",
  "turns": [
   {
-   "request_digest": "5199bce5436e1751",
+   "request_digest": "5d21051aa5cb2ce0",
    "turn": {
     "text": "",
     "tool_plan": "Calling find_places to answer the operator.",
@@ -23,7 +23,7 @@
    }
   },
   {
-   "request_digest": "42f1f13cd43b17c8",
+   "request_digest": "5e620348c02b0af4",
    "turn": {
     "text": "4 places on L2: lift_lobby_L2, pick_l2_1, pick_l2_2, charger_l2 (charger).",
     "tool_plan": null,

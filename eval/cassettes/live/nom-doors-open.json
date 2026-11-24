@@ -4,31 +4,31 @@
  "case_id": "nom-doors-open",
  "turns": [
   {
-   "request_digest": "96c281abd8637a0b",
+   "request_digest": "54e45c7c766bc117",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "door_and_lift_status_k86zhs166ket",
+      "id": "door_and_lift_status_wbv35m01ktjj",
       "name": "door_and_lift_status",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2015,
-    "output_tokens": 107
+    "input_tokens": 2143,
+    "output_tokens": 172
    }
   },
   {
-   "request_digest": "81c00927adde91e9",
+   "request_digest": "13473ec2d86a4bff",
    "turn": {
-    "text": "Yes, dock_door_1 on L1 is currently open (has been open for 3 minutes). The other doors (fire_door_a and corridor_door_l2) are closed.",
+    "text": "Yes, dock_door_1 on L1 is open right now [dock_door_1]. It's been open for 3 minutes and no robots are waiting on it. The other doors (fire_door_a and corridor_door_l2) are closed.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2298,
-    "output_tokens": 193
+    "input_tokens": 2426,
+    "output_tokens": 233
    }
   }
  ]

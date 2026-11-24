@@ -4,7 +4,7 @@
  "case_id": "door-explain-robot",
  "turns": [
   {
-   "request_digest": "2513b62c3b5ec9af",
+   "request_digest": "4794da7391070288",
    "turn": {
     "text": "",
     "tool_plan": "Calling explain_robot to answer the operator.",
@@ -23,7 +23,7 @@
    }
   },
   {
-   "request_digest": "5892f545c91b0e13",
+   "request_digest": "d0227a3b6a7e5423",
    "turn": {
     "text": "[tug_2] is working, battery 64%, on L1, working on [delivery.dispatch-204] (underway). [tug_2] has been waiting 8.0 min for door [fire_door_a], which is closed (door state unchanged for 8.0 min). Last log (2026-03-02T13:52:00Z): \"Waiting for door [fire_door_a] to open\". Alert [alert-2041] (warning): Door not responding. Suggested next step: check door fire_door_a and its door adapter; the task resumes when the door reports open.",
     "tool_plan": null,

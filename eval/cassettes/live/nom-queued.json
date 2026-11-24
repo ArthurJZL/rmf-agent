@@ -4,13 +4,13 @@
  "case_id": "nom-queued",
  "turns": [
   {
-   "request_digest": "0e953e8c53b003bc",
+   "request_digest": "6ec4a8c751f5c30c",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "list_tasks_ef9hqyjpq4js",
+      "id": "list_tasks_wjyp1b2mekns",
       "name": "list_tasks",
       "arguments": {
        "status": [
@@ -20,19 +20,19 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2013,
-    "output_tokens": 66
+    "input_tokens": 2141,
+    "output_tokens": 81
    }
   },
   {
-   "request_digest": "8f44c7a451eaee2b",
+   "request_digest": "4c7749fd8816a6ac",
    "turn": {
-    "text": "There are 2 queued tasks:\n\n- **[patrol.dispatch-105]**: Patrol to aisle_3, pack_1 (9 min estimate), waiting 2 min (requested by rmf-agent at 13:58)\n- **[delivery.dispatch-106]**: Delivery to dock_2, pack_1 (10 min estimate), waiting 1 min (requested by wms_bridge at 13:59)",
+    "text": "There are 2 queued tasks:\n\n1. **[patrol.dispatch-105]** - patrol to aisle_3, pack_1 (9 min estimate), waiting 2 min (requested by rmf-agent at 13:58)\n2. **[delivery.dispatch-106]** - delivery to dock_2, pack_1 (10 min estimate), waiting 1 min (requested by wms_bridge at 13:59)",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2285,
-    "output_tokens": 342
+    "input_tokens": 2413,
+    "output_tokens": 355
    }
   }
  ]

@@ -4,7 +4,7 @@
  "case_id": "write-dry-run",
  "turns": [
   {
-   "request_digest": "7c7f2fe6bc961236",
+   "request_digest": "ed1778b07cdf7205",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -28,7 +28,7 @@
    }
   },
   {
-   "request_digest": "07fa00fa9d37958d",
+   "request_digest": "3d0931bf0b2dcb29",
    "turn": {
     "text": "Dry run OK: Dispatch a patrol dock_1 -> staging_a, 2 round(s), on any fleet. Confirm token ct_94ad64a2c8aefd88c81800a1 (expires in 120 s). Reply \"confirm\" to commit; nothing has been sent yet.",
     "tool_plan": null,

@@ -4,13 +4,13 @@
  "case_id": "write-commit-after-confirm",
  "turns": [
   {
-   "request_digest": "7c7f2fe6bc961236",
+   "request_digest": "ed1778b07cdf7205",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "dispatch_task_pz98g3j6c5bw",
+      "id": "dispatch_task_cpzf2p09zgdq",
       "name": "dispatch_task",
       "arguments": {
        "category": "patrol",
@@ -24,29 +24,29 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2558,
-    "output_tokens": 178
+    "input_tokens": 2652,
+    "output_tokens": 241
    }
   },
   {
-   "request_digest": "85e4055732925519",
+   "request_digest": "9c8d21de45ae4bb8",
    "turn": {
-    "text": "Here's the patrol plan for your review:\n\n**Plan:** Dispatch a patrol from dock_1 to staging_a, 2 rounds, on any fleet\n**Confirm token:** ct_aee733ff4ece1b19a6cef488\n**Expires in:** 120 seconds\n\nPlease confirm if you want me to execute this patrol. Once you confirm, I'll dispatch it with dry_run=false using this confirm token.",
+    "text": "Here's the patrol plan for your review:\n\n**Plan:** Dispatch a patrol dock_1 \u2192 staging_a, 2 round(s), on any fleet\n**Confirm token:** ct_aee733ff4ece1b19a6cef488\n**Expires in:** 120 seconds\n\nPlease confirm if you want me to execute this patrol. Once you confirm, I'll dispatch it with dry_run=false using the confirm token above.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2806,
-    "output_tokens": 171
+    "input_tokens": 2900,
+    "output_tokens": 172
    }
   },
   {
-   "request_digest": "1db945f3241652a4",
+   "request_digest": "0a9de5e7b4c67e9a",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "dispatch_task_23dfnww168hy",
+      "id": "dispatch_task_82tcm1h6p65v",
       "name": "dispatch_task",
       "arguments": {
        "category": "patrol",
@@ -61,18 +61,18 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2907,
-    "output_tokens": 107
+    "input_tokens": 3002,
+    "output_tokens": 106
    }
   },
   {
-   "request_digest": "9cc6471c6f1ae6a6",
+   "request_digest": "bc4708fb3febc490",
    "turn": {
     "text": "Patrol dispatched successfully.\n\n**Task ID:** patrol.dispatch-900\n**Status:** queued\n**Route:** dock_1 \u2192 staging_a, 2 rounds\n\nThe task is now in the queue and will be assigned to an available robot.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 3052,
+    "input_tokens": 3147,
     "output_tokens": 135
    }
   }

@@ -4,7 +4,7 @@
  "case_id": "nom-no-false-positive",
  "turns": [
   {
-   "request_digest": "a5d1b4a2ba686101",
+   "request_digest": "980f91f2f71761f6",
    "turn": {
     "text": "",
     "tool_plan": "Calling find_stuck_robots to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "556e46835ff317f9",
+   "request_digest": "032fc7b806abd487",
    "turn": {
     "text": "No robot looks stuck. I checked 8 robots for error or offline status, stale state, waits on doors or lifts, blocked tasks and stalled task logs.",
     "tool_plan": null,

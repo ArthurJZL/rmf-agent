@@ -4,56 +4,14 @@
  "case_id": "write-category-not-allowed",
  "turns": [
   {
-   "request_digest": "bc78426901965c53",
+   "request_digest": "6d05fbde72202a4e",
    "turn": {
-    "text": "",
-    "tool_plan": null,
-    "tool_calls": [
-     {
-      "id": "find_places_1937e44431f0",
-      "name": "find_places",
-      "arguments": {
-       "query": "aisle_3"
-      }
-     }
-    ],
-    "finish_reason": "TOOL_CALL",
-    "input_tokens": 2552,
-    "output_tokens": 198
-   }
-  },
-  {
-   "request_digest": "3cfe1fc2b904a771",
-   "turn": {
-    "text": "",
-    "tool_plan": null,
-    "tool_calls": [
-     {
-      "id": "dispatch_task_wrppgbkyev4b",
-      "name": "dispatch_task",
-      "arguments": {
-       "category": "patrol",
-       "places": [
-        "aisle_3"
-       ],
-       "dry_run": true
-      }
-     }
-    ],
-    "finish_reason": "TOOL_CALL",
-    "input_tokens": 2675,
-    "output_tokens": 151
-   }
-  },
-  {
-   "request_digest": "23daa7c4216e6054",
-   "turn": {
-    "text": "I found aisle_3 on L1 and prepared a patrol task. Here's the plan:\n\n**Dispatch Plan:**\n- Category: patrol\n- Places: aisle_3 (1 round)\n- Fleet: any fleet\n- Requester: rmf-agent\n\nConfirm token: ct_02d992465d724a289b6011b4 (expires in 120s)\n\nPlease confirm if you want me to dispatch this cleaning patrol task. Once you confirm, I'll commit the task with dry_run=false using this token.",
+    "text": "I cannot dispatch a cleaning task because the system only supports patrol and delivery task categories. \n\nSupported task types:\n- patrol: robots navigate to specified places in order, can repeat rounds\n- delivery: robots pick up items from one place and drop off at another\n\nWould you like me to:\n1. Dispatch a patrol task that visits locations in aisle_3 instead?\n2. Dispatch a delivery task that involves aisle_3 as pickup or dropoff?\n\nIf so, please specify the exact places and any other details, and I'll run a dry_run first for your approval.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2909,
-    "output_tokens": 220
+    "input_tokens": 2646,
+    "output_tokens": 303
    }
   }
  ]

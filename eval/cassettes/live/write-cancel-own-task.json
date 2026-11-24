@@ -4,68 +4,68 @@
  "case_id": "write-cancel-own-task",
  "turns": [
   {
-   "request_digest": "56c1d0fdd127bbe2",
+   "request_digest": "2f897fb7e2295fa5",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "cancel_task_fhcse979jyt6",
+      "id": "cancel_task_bjfpvkvm7ttr",
       "name": "cancel_task",
       "arguments": {
        "task_id": "patrol.dispatch-105",
-       "reason": "it is no longer needed",
+       "reason": "no longer needed",
        "dry_run": true
       }
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2555,
+    "input_tokens": 2649,
+    "output_tokens": 143
+   }
+  },
+  {
+   "request_digest": "cf66e82766cd6797",
+   "turn": {
+    "text": "I can cancel patrol.dispatch-105. Here's the plan:\n\n**Cancel patrol.dispatch-105** - currently queued, not assigned\n- Reason: no longer needed\n- Confirm token: ct_263399c4a59f41542c15098d\n\nPlease confirm you want me to proceed with this cancellation. Once you confirm, I'll execute the command with dry_run=false.",
+    "tool_plan": null,
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 2835,
     "output_tokens": 156
    }
   },
   {
-   "request_digest": "f8228448938311ac",
-   "turn": {
-    "text": "I can cancel patrol.dispatch-105. Here's the plan:\n\n**Cancel patrol.dispatch-105** - currently queued, not assigned\n- Reason: it is no longer needed\n- Confirm token: ct_5caf82060047a5ecda4ef229\n\nPlease confirm that you want me to proceed with this cancellation. Once you confirm, I'll execute the cancellation with dry_run=false using the confirm token above.",
-    "tool_plan": null,
-    "tool_calls": [],
-    "finish_reason": "COMPLETE",
-    "input_tokens": 2742,
-    "output_tokens": 164
-   }
-  },
-  {
-   "request_digest": "467bbd9358d3173d",
+   "request_digest": "6c63f737f3a7953b",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "cancel_task_84833rx7t4yy",
+      "id": "cancel_task_8j8m7ryxqwkj",
       "name": "cancel_task",
       "arguments": {
        "task_id": "patrol.dispatch-105",
-       "reason": "it is no longer needed",
+       "reason": "no longer needed",
        "dry_run": false,
-       "confirm_token": "ct_5caf82060047a5ecda4ef229"
+       "confirm_token": "ct_263399c4a59f41542c15098d"
       }
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2842,
-    "output_tokens": 100
+    "input_tokens": 2928,
+    "output_tokens": 98
    }
   },
   {
-   "request_digest": "a6bf33aed015a362",
+   "request_digest": "bb255a6ea32910a1",
    "turn": {
-    "text": "patrol.dispatch-105 has been successfully canceled. The task status is now \"canceled\" and the cancellation has been committed to the system.",
+    "text": "patrol.dispatch-105 has been successfully canceled. The task status is now \"canceled\" and the change has been committed to the system.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2983,
-    "output_tokens": 108
+    "input_tokens": 3068,
+    "output_tokens": 103
    }
   }
  ]

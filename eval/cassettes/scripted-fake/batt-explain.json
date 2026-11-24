@@ -4,7 +4,7 @@
  "case_id": "batt-explain",
  "turns": [
   {
-   "request_digest": "59b777df07fb31a6",
+   "request_digest": "a0b95cf2c2bf51a5",
    "turn": {
     "text": "",
     "tool_plan": "Calling explain_robot to answer the operator.",
@@ -23,7 +23,7 @@
    }
   },
   {
-   "request_digest": "bfdb2de7d5b76f13",
+   "request_digest": "10deeee99df9b372",
    "turn": {
     "text": "[tote_4] is working, battery 11%, on L1, working on [delivery.dispatch-402] (underway). [tote_4] is at 11% while working on [delivery.dispatch-402], below the 20% threshold.",
     "tool_plan": null,

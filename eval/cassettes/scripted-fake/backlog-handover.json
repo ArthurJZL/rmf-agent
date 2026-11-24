@@ -4,7 +4,7 @@
  "case_id": "backlog-handover",
  "turns": [
   {
-   "request_digest": "735811cafc68a5c5",
+   "request_digest": "482d46ec3337f9b4",
    "turn": {
     "text": "1. fleet_overview: robot counts and states\n2. find_stuck_robots: anything stuck or unavailable\n3. late_tasks: late work\n4. list_tasks status=failed: failures to report\n5. recent_alerts: open alerts\n6. Write the handover with citations",
     "tool_plan": null,
@@ -15,7 +15,7 @@
    }
   },
   {
-   "request_digest": "15a899397bb82989",
+   "request_digest": "585ce3041b5df88e",
    "turn": {
     "text": "",
     "tool_plan": "Calling fleet_overview, find_stuck_robots, late_tasks, list_tasks, recent_alerts to answer the operator.",
@@ -56,7 +56,7 @@
    }
   },
   {
-   "request_digest": "fdbc09b40b6bad86",
+   "request_digest": "4ce5f4d6a7308af2",
    "turn": {
     "text": "Shift handover (2026-03-02T14:00:00Z).\nFleet: 8 robots, 1 charging, 1 error, 1 offline, 5 working.\nUnavailable or stuck: [tote_3] is offline. [tote_3] has not reported state for 720 s. [tug_1] is in error. [tug_1] reports: localization: Localization confidence below threshold; manual relocalization required.\nLate work: 7 of 15 open tasks are late (rules: queued over 15 min, or running over 1.25x the estimate): [delivery.dispatch-530] queued 55.0 min (40.0 min past SLA); [delivery.dispatch-531] queued 48.0 min (33.0 min past SLA); [patrol.dispatch-532] queued 41.0 min (26.0 min past SLA); and 4 more.\nFailed tasks: none.\nOpen alerts: [alert-5202] Robot error, [alert-5201] Robot offline.",
     "tool_plan": null,

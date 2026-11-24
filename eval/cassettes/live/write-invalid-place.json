@@ -4,13 +4,13 @@
  "case_id": "write-invalid-place",
  "turns": [
   {
-   "request_digest": "442575dfb6c008c8",
+   "request_digest": "24bfa469bc48a2cb",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_places_eg96d9f5qbvw",
+      "id": "find_places_9kyh9qqmv2ey",
       "name": "find_places",
       "arguments": {
        "query": "roof"
@@ -18,35 +18,35 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2552,
+    "input_tokens": 2646,
     "output_tokens": 98
    }
   },
   {
-   "request_digest": "1c7cfb9fb1d093c1",
+   "request_digest": "6fdf396fa243cd9d",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_places_x9tng7spdney",
+      "id": "find_places_t365qe5kwcp8",
       "name": "find_places",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2641,
-    "output_tokens": 63
+    "input_tokens": 2735,
+    "output_tokens": 72
    }
   },
   {
-   "request_digest": "eee1eb2bfd57528b",
+   "request_digest": "022f093ee60c08bb",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_places_d23fpmk9cwdr",
+      "id": "find_places_zhe72j6w05kp",
       "name": "find_places",
       "arguments": {
        "level": "L3"
@@ -54,19 +54,101 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 3198,
+    "input_tokens": 3292,
     "output_tokens": 89
    }
   },
   {
-   "request_digest": "a81fff8b0ab9e604",
+   "request_digest": "81fe8a685bbe9c08",
    "turn": {
-    "text": "I searched for \"roof\" as a patrol destination, but no place named \"roof\" exists in the navigation graph. \n\nHere are the available patrol locations I found:\n- L1: dock_1, dock_2, staging_a, staging_b, aisle_3, aisle_7, pack_1, lift_lobby_L1, charger_1, charger_2, charger_3\n- L2: lift_lobby_L2, pick_l2_1, pick_l2_2, charger_l2\n\nPlease specify which location(s) you'd like the patrol to visit, or if you meant a different name for the roof area.",
+    "text": "",
     "tool_plan": null,
-    "tool_calls": [],
-    "finish_reason": "COMPLETE",
-    "input_tokens": 3288,
-    "output_tokens": 254
+    "tool_calls": [
+     {
+      "id": "find_places_zvkq9gwrs412",
+      "name": "find_places",
+      "arguments": {
+       "query": "L3"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3382,
+    "output_tokens": 104
+   }
+  },
+  {
+   "request_digest": "c8300c47da584dc4",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_places_vcffbre5r036",
+      "name": "find_places",
+      "arguments": {
+       "query": "R"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3472,
+    "output_tokens": 76
+   }
+  },
+  {
+   "request_digest": "37ee7ffcae371b60",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_places_v643abq3rc90",
+      "name": "find_places",
+      "arguments": {
+       "query": "terrace"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3684,
+    "output_tokens": 52
+   }
+  },
+  {
+   "request_digest": "3f5e1b8f96159416",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_places_m4x84x23gxdc",
+      "name": "find_places",
+      "arguments": {
+       "query": "outdoor"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3774,
+    "output_tokens": 56
+   }
+  },
+  {
+   "request_digest": "a23a2eb292e0664c",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_places_z774hp2bphxw",
+      "name": "find_places",
+      "arguments": {}
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 3864,
+    "output_tokens": 67
    }
   }
  ]

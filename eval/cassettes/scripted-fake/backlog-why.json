@@ -4,7 +4,7 @@
  "case_id": "backlog-why",
  "turns": [
   {
-   "request_digest": "340fecd20e132204",
+   "request_digest": "10e62b33ec6b8882",
    "turn": {
     "text": "",
     "tool_plan": "Calling late_tasks, fleet_overview, find_stuck_robots to answer the operator.",
@@ -31,7 +31,7 @@
    }
   },
   {
-   "request_digest": "d2746b31b631d1b1",
+   "request_digest": "9cfe043e6f463c3b",
    "turn": {
     "text": "10 tasks are queued and 7 open tasks are late. Capacity is reduced: 5 of 8 robots are working, 1 charging, and these cannot take work: [tote_3] is offline. [tote_3] has not reported state for 720 s. [tug_1] is in error. [tug_1] reports: localization: Localization confidence below threshold; manual relocalization required. Worst late tasks: [delivery.dispatch-530] queued 55.0 min (40.0 min past SLA); [delivery.dispatch-531] queued 48.0 min (33.0 min past SLA); [patrol.dispatch-532] queued 41.0 min (26.0 min past SLA); and 4 more. Suggested next steps: bring the offline and errored robots back first; the queue drains as capacity returns.",
     "tool_plan": null,

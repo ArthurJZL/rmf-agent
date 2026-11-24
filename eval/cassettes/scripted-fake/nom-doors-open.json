@@ -4,7 +4,7 @@
  "case_id": "nom-doors-open",
  "turns": [
   {
-   "request_digest": "96c281abd8637a0b",
+   "request_digest": "54e45c7c766bc117",
    "turn": {
     "text": "",
     "tool_plan": "Calling door_and_lift_status to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "bf52a74282db1f71",
+   "request_digest": "4a368f75b906fe7d",
    "turn": {
     "text": "Open doors: [dock_door_1]. Doors: [dock_door_1] open, [fire_door_a] closed, [corridor_door_l2] closed. Lifts: [lift_1] agv mode at L1 (in service).",
     "tool_plan": null,

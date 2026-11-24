@@ -4,35 +4,35 @@
  "case_id": "conflict-cancel-not-owned",
  "turns": [
   {
-   "request_digest": "87d29b8197e6dd92",
+   "request_digest": "148393c2741c8b80",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "cancel_task_cbs74jvk0dv2",
+      "id": "cancel_task_3qbk708w5ra9",
       "name": "cancel_task",
       "arguments": {
        "task_id": "delivery.dispatch-702",
-       "reason": "Operator request",
+       "reason": "Operator requested",
        "dry_run": true
       }
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2549,
-    "output_tokens": 133
+    "input_tokens": 2643,
+    "output_tokens": 318
    }
   },
   {
-   "request_digest": "d3f4d69b57b3954f",
+   "request_digest": "f3aa546a13290cef",
    "turn": {
-    "text": "I cannot cancel delivery.dispatch-702 because it was requested by wms_bridge, not rmf-agent. The system only allows cancellation of tasks that rmf-agent dispatched itself.\n\n**What happened:** The task belongs to wms_bridge, so rmf-agent lacks permission to cancel it [delivery.dispatch-702].\n\n**Next steps:** \n- If you need to stop this task, contact the wms_bridge operator who requested it\n- I can help you find who requested it or check its current status instead\n\nWould you like me to check the task status to see what state it's in?",
+    "text": "I cannot cancel delivery.dispatch-702 because it was requested by wms_bridge, not rmf-agent. The system only allows cancellation of tasks that rmf-agent dispatched itself.\n\n**What happened:** Task [delivery.dispatch-702] is owned by wms_bridge, so rmf-agent lacks permission to cancel it.\n\n**Next steps:** \n- If you need to stop this task, contact the wms_bridge operator who requested it\n- If you want rmf-agent to take over or reassign the task, I can help with that instead\n\nWould you like me to check the current status of this task or help with an alternative approach?",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2682,
-    "output_tokens": 159
+    "input_tokens": 2776,
+    "output_tokens": 170
    }
   }
  ]

@@ -4,31 +4,31 @@
  "case_id": "lift-status",
  "turns": [
   {
-   "request_digest": "a73c1cf6f3c30298",
+   "request_digest": "92fb0d1b78c29537",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "door_and_lift_status_0ede09p0mw1n",
+      "id": "door_and_lift_status_ahyjdb2rd98f",
       "name": "door_and_lift_status",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2017,
+    "input_tokens": 2145,
     "output_tokens": 191
    }
   },
   {
-   "request_digest": "e0f34ae3661ff63c",
+   "request_digest": "dbde407242ef7a99",
    "turn": {
-    "text": "lift_1 is **out of service** (offline mode) with no current movement. It shows:\n- Current floor: L1, door closed, stopped motion\n- In service: false\n- Robot tote_5 has been waiting for 12 minutes (state age 14 min)\n\nThe lift appears to be the cause of the wait for [tote_5]. Next step: check if lift_1 needs manual reset or maintenance dispatch.",
+    "text": "Lift lift_1 is **out of service** and currently offline. Its status shows:\n- Mode: offline, in_service: false\n- Current floor: L1, door closed, stopped motion\n- tote_5 is waiting on it for 12 minutes [tote_5]\n\nThe lift appears to be non-operational, which is why the robot is stuck waiting. Next step: check if lift_1 needs maintenance or reset, and consider reassigning tote_5's task if the lift remains unavailable.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2335,
-    "output_tokens": 312
+    "input_tokens": 2463,
+    "output_tokens": 321
    }
   }
  ]

@@ -4,13 +4,13 @@
  "case_id": "door-explain-robot",
  "turns": [
   {
-   "request_digest": "2513b62c3b5ec9af",
+   "request_digest": "4794da7391070288",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "explain_robot_41ng4xgpycnr",
+      "id": "explain_robot_50k0e8dwy5qq",
       "name": "explain_robot",
       "arguments": {
        "robot": "tug_2"
@@ -18,36 +18,36 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2020,
-    "output_tokens": 114
+    "input_tokens": 2148,
+    "output_tokens": 111
    }
   },
   {
-   "request_digest": "29546d80bea08cec",
+   "request_digest": "96c73641e9151c30",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "door_and_lift_status_psa486b010kh",
+      "id": "door_and_lift_status_q9639fnwpg53",
       "name": "door_and_lift_status",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2779,
+    "input_tokens": 2907,
     "output_tokens": 114
    }
   },
   {
-   "request_digest": "ac977c469258ad61",
+   "request_digest": "e35fa2505c6cc10b",
    "turn": {
-    "text": "tug_2 is waiting for fire_door_a to open. The door has been closed for 8 minutes and tug_2 has been waiting since 13:52 [fire_door_a]. There's also a warning alert that the door hasn't acknowledged the open request for 2 minutes [alert-2041]. The door is the blocker preventing movement.",
+    "text": "tug_2 hasn't moved because it's waiting for fire_door_a to open. The door has been closed for 8 minutes and tug_2 has been waiting that entire time [fire_door_a]. There's also a door not responding alert [alert-2041] indicating the door hasn't acknowledged the open request for 2 minutes. This is blocking the robot's delivery task progress.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 3096,
-    "output_tokens": 215
+    "input_tokens": 3224,
+    "output_tokens": 241
    }
   }
  ]

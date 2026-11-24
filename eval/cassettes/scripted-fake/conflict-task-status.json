@@ -4,7 +4,7 @@
  "case_id": "conflict-task-status",
  "turns": [
   {
-   "request_digest": "fcdf67d97348e187",
+   "request_digest": "5034164803080459",
    "turn": {
     "text": "",
     "tool_plan": "Calling task_status, task_log to answer the operator.",
@@ -30,7 +30,7 @@
    }
   },
   {
-   "request_digest": "f270850d0050e1e1",
+   "request_digest": "376474f908e6f9b3",
    "turn": {
     "text": "[delivery.dispatch-701] is queued (delivery, requested by ops_dashboard, dock_2 -> staging_b), waiting 6.0 min.",
     "tool_plan": null,

@@ -333,7 +333,7 @@
     optional_tools: [dispatch_task, find_places]
     writes: none
     facts_any: [["not allowlisted", "not allowed", "only patrol", "patrol or delivery",
-                 "not supported"]]
+                 "patrol and delivery", "not supported"]]
 
 - id: write-cancel-own-task
   scenario: nominal

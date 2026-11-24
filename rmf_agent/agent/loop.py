@@ -24,7 +24,7 @@ from typing import Any, Literal, TypeVar
 from ..tools import Toolbox, ToolOutcome
 from .model import Message, ModelClient, ModelTurn, ToolCall
 from .policy import authorize_write, looks_multistep, screen_request
-from .prompts import EXECUTE_PROMPT, PLAN_PROMPT, SYSTEM_PROMPT
+from .prompts import EXECUTE_PROMPT, PLAN_PROMPT, SYSTEM_PROMPT, system_prompt
 from .trace import Tracer
 
 Mode = Literal["react", "plan", "auto"]
@@ -102,7 +102,13 @@ class Agent:
         self.tools = [spec.cohere_tool() for spec in toolbox.available()]
 
     def new_session(self) -> Session:
-        return Session(messages=[{"role": "system", "content": SYSTEM_PROMPT}])
+        settings = getattr(self.toolbox, "settings", None)
+        prompt = (
+            system_prompt(settings.allow_writes, settings.allowed_categories)
+            if settings is not None
+            else SYSTEM_PROMPT
+        )
+        return Session(messages=[{"role": "system", "content": prompt}])
 
     def ask(self, session: Session, question: str) -> TurnResult:
         start = time.perf_counter()

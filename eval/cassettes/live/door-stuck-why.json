@@ -4,30 +4,30 @@
  "case_id": "door-stuck-why",
  "turns": [
   {
-   "request_digest": "54d47a6b6b87d21c",
+   "request_digest": "a0802047fe29ed72",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_stuck_robots_kgqt3ffm4q69",
+      "id": "find_stuck_robots_m2awjdpjhh5j",
       "name": "find_stuck_robots",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2015,
-    "output_tokens": 99
+    "input_tokens": 2143,
+    "output_tokens": 172
    }
   },
   {
-   "request_digest": "c551f4e27dedee3c",
+   "request_digest": "fa4cd4fc7cdb1633",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "explain_robot_6kmft3ve35cg",
+      "id": "explain_robot_ydsj4zy5jam3",
       "name": "explain_robot",
       "arguments": {
        "robot": "tug_2"
@@ -35,19 +35,19 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2300,
+    "input_tokens": 2428,
     "output_tokens": 76
    }
   },
   {
-   "request_digest": "be62d8ad4be12c41",
+   "request_digest": "53e2f5ce7edfcb14",
    "turn": {
-    "text": "The robot [tug_2] is stuck. It\u2019s waiting for door [fire_door_a] to open and the door has been closed for 8 minutes (last log: \u201cWaiting for door [fire_door_a] to open\u201d at 13:52). There\u2019s also an alert [alert-2041] reporting the door hasn't responded to an open request for 2 minutes.\n\n**Why:** Door fire_door_a is closed/unresponsive, blocking tug_2\u2019s delivery task [delivery.dispatch-204] from proceeding to aisle_7.\n\n**Next step:** Check door fire_door_a status and open it if needed, then tug_2 can continue.",
+    "text": "Robot [tug_2] is stuck. It\u2019s waiting for door [fire_door_a] to open and the door has been closed for 8 minutes (last log: \u201cWaiting for door [fire_door_a] to open\u201d at 13:52). There\u2019s also an alert [alert-2041] reporting the door hasn't responded to an open request for 2 minutes. The robot is executing task [delivery.dispatch-204] and cannot proceed until the door opens. Next step: check door [fire_door_a] status and ensure it can be opened.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 3059,
-    "output_tokens": 278
+    "input_tokens": 3187,
+    "output_tokens": 244
    }
   }
  ]

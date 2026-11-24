@@ -4,7 +4,7 @@
  "case_id": "batt-charging-ok",
  "turns": [
   {
-   "request_digest": "a0b4ac4878b2c0ce",
+   "request_digest": "76a2feeeb3b5e6b8",
    "turn": {
     "text": "",
     "tool_plan": "Calling explain_robot to answer the operator.",
@@ -23,7 +23,7 @@
    }
   },
   {
-   "request_digest": "930ba6f11913e077",
+   "request_digest": "b6a8971265b22937",
    "turn": {
     "text": "[tug_3] is charging, battery 18%, on L1. No rule flags anything abnormal.",
     "tool_plan": null,

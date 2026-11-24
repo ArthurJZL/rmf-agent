@@ -4,7 +4,7 @@
  "case_id": "write-commit-after-confirm",
  "turns": [
   {
-   "request_digest": "7c7f2fe6bc961236",
+   "request_digest": "ed1778b07cdf7205",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -28,7 +28,7 @@
    }
   },
   {
-   "request_digest": "a36051c625664007",
+   "request_digest": "aa14636105bbc321",
    "turn": {
     "text": "Dry run OK: Dispatch a patrol dock_1 -> staging_a, 2 round(s), on any fleet. Confirm token ct_aee733ff4ece1b19a6cef488 (expires in 120 s). Reply \"confirm\" to commit; nothing has been sent yet.",
     "tool_plan": null,
@@ -39,7 +39,7 @@
    }
   },
   {
-   "request_digest": "34602981f9a9cfa4",
+   "request_digest": "ccb7c4900c369883",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -65,7 +65,7 @@
    }
   },
   {
-   "request_digest": "e06340ac9fbe26e1",
+   "request_digest": "99897f05c662c154",
    "turn": {
     "text": "Dispatched: task [patrol.dispatch-900] is now queued.",
     "tool_plan": null,

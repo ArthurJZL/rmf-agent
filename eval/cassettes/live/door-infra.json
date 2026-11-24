@@ -4,31 +4,31 @@
  "case_id": "door-infra",
  "turns": [
   {
-   "request_digest": "95f690d65eea7fc4",
+   "request_digest": "2f1323f60ddeeff3",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "door_and_lift_status_ds1m66phyn8c",
+      "id": "door_and_lift_status_cpdj1sa4fngc",
       "name": "door_and_lift_status",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2017,
-    "output_tokens": 175
+    "input_tokens": 2145,
+    "output_tokens": 115
    }
   },
   {
-   "request_digest": "daa6940820c72fcd",
+   "request_digest": "15f31085ef0d7d8f",
    "turn": {
-    "text": "Yes, a door is holding things up. fire_door_a on L1 is closed with tug_2 waiting for 8 minutes [tug_2]. All lifts are operational with no waiting robots.",
+    "text": "Yes, a door is holding up a robot. fire_door_a on L1 is closed and tug_2 has been waiting for 8 minutes [tug_2]. This is the only door or lift currently blocking robot movement.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2334,
-    "output_tokens": 226
+    "input_tokens": 2462,
+    "output_tokens": 233
    }
   }
  ]

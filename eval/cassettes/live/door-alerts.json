@@ -4,13 +4,13 @@
  "case_id": "door-alerts",
  "turns": [
   {
-   "request_digest": "7cb375bffc7f5af0",
+   "request_digest": "55e89bc693aa246c",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "recent_alerts_5admvmjnrqx0",
+      "id": "recent_alerts_zxevvp85knp0",
       "name": "recent_alerts",
       "arguments": {
        "since_min": 60
@@ -18,19 +18,19 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2017,
-    "output_tokens": 106
+    "input_tokens": 2145,
+    "output_tokens": 95
    }
   },
   {
-   "request_digest": "e16bb8ad8dc7b932",
+   "request_digest": "006840badf6adeac",
    "turn": {
-    "text": "Yes, there's one alert you should check:\n\n**Alert [alert-2041]** - 6 minutes old\n- Door fire_door_a not responding\n- Has not acknowledged an open request for 2 minutes\n- Associated with task [delivery.dispatch-204]\n- Level: warning\n\nThis could block robots that need to use fire_door_a. Check the door's current status and see if any robots are waiting on it.",
+    "text": "Yes, there is one recent alert you should look at:\n\n- **[alert-2041]**: Door fire_door_a has not acknowledged an open request for 2 minutes (warning, 6 min old). It's associated with task delivery.dispatch-204.\n\nSuggested next step: Check the door status and the related task to see if the door is stuck or if the task needs attention.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2240,
-    "output_tokens": 316
+    "input_tokens": 2368,
+    "output_tokens": 181
    }
   }
  ]

@@ -4,7 +4,7 @@
  "case_id": "write-cancel-own-task",
  "turns": [
   {
-   "request_digest": "56c1d0fdd127bbe2",
+   "request_digest": "2f897fb7e2295fa5",
    "turn": {
     "text": "",
     "tool_plan": "Calling task_status to answer the operator.",
@@ -23,7 +23,7 @@
    }
   },
   {
-   "request_digest": "2ac9779d12d05d61",
+   "request_digest": "3888bcd3cca02d97",
    "turn": {
     "text": "",
     "tool_plan": "Calling cancel_task to answer the operator.",
@@ -43,7 +43,7 @@
    }
   },
   {
-   "request_digest": "6baa6c544dba77ca",
+   "request_digest": "055baaf34caf2678",
    "turn": {
     "text": "Dry run OK: Cancel patrol.dispatch-105 (status queued, not assigned). Confirm token ct_e73eb24aa00b04603a39c631 (expires in 120 s). Reply \"confirm\" to commit; nothing has been sent yet.",
     "tool_plan": null,
@@ -54,7 +54,7 @@
    }
   },
   {
-   "request_digest": "c922fe73dd816ed6",
+   "request_digest": "ac6a8064ebf2ba42",
    "turn": {
     "text": "",
     "tool_plan": "Calling cancel_task to answer the operator.",
@@ -76,7 +76,7 @@
    }
   },
   {
-   "request_digest": "087c5795adc707e7",
+   "request_digest": "2995819934272aa5",
    "turn": {
     "text": "Canceled: task [patrol.dispatch-105] is now canceled.",
     "tool_plan": null,

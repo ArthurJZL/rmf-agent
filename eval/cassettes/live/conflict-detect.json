@@ -4,13 +4,13 @@
  "case_id": "conflict-detect",
  "turns": [
   {
-   "request_digest": "5088aeca15fbf2a8",
+   "request_digest": "ba8083d3fc50d886",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "list_tasks_31cv3ng0nsgm",
+      "id": "list_tasks_eapqb6hzkbdg",
       "name": "list_tasks",
       "arguments": {
        "status": [
@@ -21,54 +21,18 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2016,
-    "output_tokens": 162
+    "input_tokens": 2144,
+    "output_tokens": 166
    }
   },
   {
-   "request_digest": "2203bd2683a78cfa",
+   "request_digest": "7a8f282bb82a275a",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "list_tasks_j2sh6je72ej1",
-      "name": "list_tasks",
-      "arguments": {
-       "limit": 100
-      }
-     }
-    ],
-    "finish_reason": "TOOL_CALL",
-    "input_tokens": 2288,
-    "output_tokens": 97
-   }
-  },
-  {
-   "request_digest": "356f3c111c32bcfa",
-   "turn": {
-    "text": "",
-    "tool_plan": null,
-    "tool_calls": [
-     {
-      "id": "door_and_lift_status_x81e3bw64zc2",
-      "name": "door_and_lift_status",
-      "arguments": {}
-     }
-    ],
-    "finish_reason": "TOOL_CALL",
-    "input_tokens": 2665,
-    "output_tokens": 202
-   }
-  },
-  {
-   "request_digest": "4314241013c7b07d",
-   "turn": {
-    "text": "",
-    "tool_plan": null,
-    "tool_calls": [
-     {
-      "id": "task_status_5wm8gn7242ca",
+      "id": "task_status_347a8wxs0qyv",
       "name": "task_status",
       "arguments": {
        "task_id": "delivery.dispatch-701"
@@ -76,82 +40,101 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2948,
-    "output_tokens": 90
+    "input_tokens": 2416,
+    "output_tokens": 74
    }
   },
   {
-   "request_digest": "f05db64b906ffe6c",
+   "request_digest": "ceef6df810e1a517",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "fleet_overview_66tgz454gz5m",
-      "name": "fleet_overview",
-      "arguments": {}
+      "id": "task_status_wvwk9yfggtjr",
+      "name": "task_status",
+      "arguments": {
+       "task_id": "delivery.dispatch-702"
+      }
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 3171,
-    "output_tokens": 115
+    "input_tokens": 2639,
+    "output_tokens": 124
    }
   },
   {
-   "request_digest": "902b4656a60e3af6",
+   "request_digest": "f81298096d66617d",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_stuck_robots_n8vym5gedj8z",
+      "id": "list_tasks_7ryxckmj1qe2",
+      "name": "list_tasks",
+      "arguments": {
+       "status": [
+        "queued"
+       ],
+       "limit": 50,
+       "category": "delivery"
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2869,
+    "output_tokens": 134
+   }
+  },
+  {
+   "request_digest": "265fb57e7f51160d",
+   "turn": {
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "find_stuck_robots_t6b3h34rpkk4",
       "name": "find_stuck_robots",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 3708,
-    "output_tokens": 45
+    "input_tokens": 3147,
+    "output_tokens": 143
    }
   },
   {
-   "request_digest": "05bbf6552258199a",
+   "request_digest": "3c827594b65118e7",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "task_log_6zr5n323wfyf",
-      "name": "task_log",
+      "id": "list_tasks_85reqnv1axdp",
+      "name": "list_tasks",
       "arguments": {
-       "task_id": "delivery.dispatch-701",
-       "limit": 10
+       "status": [
+        "queued"
+       ],
+       "limit": 50,
+       "category": "patrol"
       }
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 3857,
-    "output_tokens": 256
+    "input_tokens": 3296,
+    "output_tokens": 251
    }
   },
   {
-   "request_digest": "4e59d403f4e8e253",
+   "request_digest": "08d1b544150ed65a",
    "turn": {
-    "text": "",
+    "text": "No conflicts detected in the queue.\n\nThere are 2 queued delivery tasks:\n- [delivery.dispatch-701]: dock_2 \u2192 staging_b (ops_dashboard)\n- [delivery.dispatch-702]: dock_2 \u2192 pack_1 (wms_bridge)\n\nBoth share dock_2 but have different subsequent destinations, and neither task has been assigned to a robot yet (dispatch_status: queued). No patrol tasks are queued. No robots are stuck or waiting on infrastructure that would indicate conflict.",
     "tool_plan": null,
-    "tool_calls": [
-     {
-      "id": "task_log_q4ns1vdk684n",
-      "name": "task_log",
-      "arguments": {
-       "task_id": "delivery.dispatch-702",
-       "limit": 10
-      }
-     }
-    ],
-    "finish_reason": "TOOL_CALL",
-    "input_tokens": 4013,
-    "output_tokens": 60
+    "tool_calls": [],
+    "finish_reason": "COMPLETE",
+    "input_tokens": 3422,
+    "output_tokens": 381
    }
   }
  ]

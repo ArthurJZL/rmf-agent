@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generated_at": "2026-11-23T21:15:20Z",
+  "generated_at": "2026-11-24T02:39:00Z",
   "model_kind": "fake",
   "model": "scripted-fake",
   "fake_model": true,
   "cases": 40,
-  "git_commit": "271d183",
-  "python": "3.12.3",
+  "git_commit": "12cf22f",
+  "python": "3.12.12",
   "cohere_sdk": "7.3.2",
   "max_steps": 8
  },
@@ -24,13 +24,13 @@
   "steps_mean": 2.08,
   "steps_max": 5,
   "model_call_latency_ms": {
-   "p50": 0.36,
-   "p95": 0.62,
+   "p50": 0.29,
+   "p95": 0.5,
    "n": 83
   },
   "e2e_latency_ms": {
-   "p50": 1.66,
-   "p95": 3.41
+   "p50": 1.35,
+   "p95": 2.56
   },
   "input_tokens": null,
   "output_tokens": null,
@@ -86,10 +86,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    1.14,
-    0.38
+    1.41,
+    0.37
    ],
-   "e2e_latency_ms": 3.32,
+   "e2e_latency_ms": 3.08,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -133,10 +133,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.44,
-    0.37
+    0.26,
+    0.25
    ],
-   "e2e_latency_ms": 2.13,
+   "e2e_latency_ms": 1.43,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -186,10 +186,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.48,
-    0.34
+    0.28,
+    0.22
    ],
-   "e2e_latency_ms": 1.83,
+   "e2e_latency_ms": 1.13,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -232,10 +232,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.57,
-    0.36
+    0.51,
+    0.22
    ],
-   "e2e_latency_ms": 1.65,
+   "e2e_latency_ms": 1.79,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -283,10 +283,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.64,
-    0.38
+    0.48,
+    0.4
    ],
-   "e2e_latency_ms": 1.63,
+   "e2e_latency_ms": 1.42,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -331,10 +331,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.46,
-    0.42
+    0.52,
+    0.23
    ],
-   "e2e_latency_ms": 3.19,
+   "e2e_latency_ms": 1.44,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -378,10 +378,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.59,
-    0.49
+    0.36,
+    0.24
    ],
-   "e2e_latency_ms": 2.27,
+   "e2e_latency_ms": 1.93,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -436,11 +436,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.38,
-    0.31,
-    0.34
+    0.44,
+    0.29,
+    0.23
    ],
-   "e2e_latency_ms": 2.81,
+   "e2e_latency_ms": 2.13,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -492,10 +492,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.44,
-    0.54
+    0.32,
+    0.2
    ],
-   "e2e_latency_ms": 3.0,
+   "e2e_latency_ms": 1.1,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -540,10 +540,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.39,
-    0.34
+    0.34,
+    0.22
    ],
-   "e2e_latency_ms": 1.22,
+   "e2e_latency_ms": 0.92,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -586,10 +586,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.51,
-    0.34
+    0.4,
+    0.31
    ],
-   "e2e_latency_ms": 1.79,
+   "e2e_latency_ms": 2.07,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -635,10 +635,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.41,
-    0.4
+    0.39,
+    0.27
    ],
-   "e2e_latency_ms": 6.1,
+   "e2e_latency_ms": 2.56,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -710,10 +710,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.37,
-    0.35
+    0.36,
+    0.2
    ],
-   "e2e_latency_ms": 1.62,
+   "e2e_latency_ms": 1.17,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -756,10 +756,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.46,
-    0.37
+    0.34,
+    0.21
    ],
-   "e2e_latency_ms": 1.72,
+   "e2e_latency_ms": 1.18,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -805,10 +805,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.47,
-    0.38
+    0.36,
+    0.42
    ],
-   "e2e_latency_ms": 3.15,
+   "e2e_latency_ms": 1.91,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -858,10 +858,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.62,
-    0.33
+    0.38,
+    0.21
    ],
-   "e2e_latency_ms": 1.75,
+   "e2e_latency_ms": 1.17,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -907,9 +907,9 @@
    "steps": 2,
    "model_latency_ms": [
     0.35,
-    0.31
+    0.24
    ],
-   "e2e_latency_ms": 1.28,
+   "e2e_latency_ms": 1.06,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -954,10 +954,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.37,
-    0.45
+    0.4,
+    0.2
    ],
-   "e2e_latency_ms": 1.63,
+   "e2e_latency_ms": 1.17,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1002,10 +1002,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.41,
-    0.46
+    0.36,
+    0.27
    ],
-   "e2e_latency_ms": 5.85,
+   "e2e_latency_ms": 2.53,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1062,10 +1062,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.63,
-    0.36
+    0.35,
+    0.29
    ],
-   "e2e_latency_ms": 2.11,
+   "e2e_latency_ms": 1.32,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1117,11 +1117,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.39,
-    0.22,
-    0.28
+    0.33,
+    0.27,
+    0.38
    ],
-   "e2e_latency_ms": 3.41,
+   "e2e_latency_ms": 3.08,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1197,10 +1197,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.31,
-    0.35
+    0.32,
+    0.26
    ],
-   "e2e_latency_ms": 1.66,
+   "e2e_latency_ms": 1.35,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1255,11 +1255,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.3,
-    0.22,
-    0.22
+    0.33,
+    0.23,
+    0.35
    ],
-   "e2e_latency_ms": 1.52,
+   "e2e_latency_ms": 1.67,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1316,11 +1316,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.26,
-    0.2,
+    0.39,
+    0.23,
     0.23
    ],
-   "e2e_latency_ms": 1.45,
+   "e2e_latency_ms": 1.56,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1375,12 +1375,12 @@
    "gate_rejections": 0,
    "steps": 4,
    "model_latency_ms": [
-    0.32,
+    0.36,
     0.2,
-    0.24,
-    0.18
+    0.22,
+    0.17
    ],
-   "e2e_latency_ms": 1.79,
+   "e2e_latency_ms": 1.72,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1443,10 +1443,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.38,
-    0.23
+    0.5,
+    0.18
    ],
-   "e2e_latency_ms": 1.38,
+   "e2e_latency_ms": 1.91,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1502,11 +1502,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.28,
-    0.41,
-    0.21
+    0.25,
+    0.21,
+    0.15
    ],
-   "e2e_latency_ms": 1.74,
+   "e2e_latency_ms": 1.22,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1562,10 +1562,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.35,
-    0.34
+    0.34,
+    0.28
    ],
-   "e2e_latency_ms": 1.61,
+   "e2e_latency_ms": 1.55,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1619,10 +1619,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    1.19,
-    0.33
+    0.41,
+    0.21
    ],
-   "e2e_latency_ms": 2.47,
+   "e2e_latency_ms": 1.29,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1672,12 +1672,12 @@
    "gate_rejections": 0,
    "steps": 4,
    "model_latency_ms": [
-    0.38,
-    0.29,
-    0.22,
-    0.23
+    0.32,
+    0.24,
+    0.17,
+    0.2
    ],
-   "e2e_latency_ms": 2.95,
+   "e2e_latency_ms": 2.23,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1752,11 +1752,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.35,
-    0.31,
-    0.23
+    0.74,
+    0.22,
+    0.27
    ],
-   "e2e_latency_ms": 1.63,
+   "e2e_latency_ms": 2.1,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1820,10 +1820,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.44,
-    0.26
+    0.36,
+    0.15
    ],
-   "e2e_latency_ms": 1.36,
+   "e2e_latency_ms": 1.01,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1906,18 +1906,18 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.33,
-    0.26
+    0.3,
+    0.17
    ],
-   "e2e_latency_ms": 0.98,
+   "e2e_latency_ms": 0.78,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
-   "answer": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Nothing was sent.",
+   "answer": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Supported categories: patrol, delivery. Do not substitute another category; tell the operator this task type is not supported. Nothing was sent.",
    "turns": [
     {
      "question": "Dispatch a cleaning task in aisle_3.",
-     "answer": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Nothing was sent.",
+     "answer": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Supported categories: patrol, delivery. Do not substitute another category; tell the operator this task type is not supported. Nothing was sent.",
      "mode": "react",
      "plan": null,
      "stopped_reason": "final",
@@ -1958,13 +1958,13 @@
    "gate_rejections": 0,
    "steps": 5,
    "model_latency_ms": [
-    0.53,
-    0.36,
-    0.24,
-    0.4,
-    0.21
+    0.37,
+    0.19,
+    0.16,
+    0.14,
+    0.32
    ],
-   "e2e_latency_ms": 3.32,
+   "e2e_latency_ms": 2.3,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2104,7 +2104,7 @@
    "gate_rejections": 0,
    "steps": 0,
    "model_latency_ms": [],
-   "e2e_latency_ms": 0.04,
+   "e2e_latency_ms": 0.03,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2137,7 +2137,7 @@
    "gate_rejections": 0,
    "steps": 0,
    "model_latency_ms": [],
-   "e2e_latency_ms": 0.05,
+   "e2e_latency_ms": 0.03,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2170,9 +2170,9 @@
    "gate_rejections": 0,
    "steps": 1,
    "model_latency_ms": [
-    0.61
+    0.45
    ],
-   "e2e_latency_ms": 0.67,
+   "e2e_latency_ms": 0.5,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],

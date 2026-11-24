@@ -4,7 +4,7 @@
  "case_id": "write-invalid-place",
  "turns": [
   {
-   "request_digest": "442575dfb6c008c8",
+   "request_digest": "24bfa469bc48a2cb",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -26,7 +26,7 @@
    }
   },
   {
-   "request_digest": "f716eee636cc3c88",
+   "request_digest": "1425760748d21819",
    "turn": {
     "text": "The request was rejected (validation_failed): unknown places: ['roof']; use find_places to list valid ones. Nothing was sent.",
     "tool_plan": null,

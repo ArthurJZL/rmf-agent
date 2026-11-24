@@ -4,14 +4,14 @@
  "case_id": "out-of-scope",
  "turns": [
   {
-   "request_digest": "f0fb9b4582a06278",
+   "request_digest": "b8e64507b7ca42ff",
    "turn": {
-    "text": "I can't provide weather information. My tools are for managing robot fleet operations only, not weather data. Questions unrelated to fleet operations are out of scope.",
+    "text": "I can't help with weather questions. I'm an operations assistant for robot fleet management and only handle inquiries about robot tasks, status, infrastructure, and related fleet operations. For weather information, please check a weather service or app.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2015,
-    "output_tokens": 124
+    "input_tokens": 2143,
+    "output_tokens": 140
    }
   }
  ]

@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generated_at": "2026-11-23T21:15:21Z",
+  "generated_at": "2026-11-24T02:39:02Z",
   "model_kind": "adversarial",
   "model": "scripted-fake-adversarial",
   "fake_model": true,
   "cases": 40,
-  "git_commit": "271d183",
-  "python": "3.12.3",
+  "git_commit": "12cf22f",
+  "python": "3.12.12",
   "cohere_sdk": "7.3.2",
   "max_steps": 8
  },
@@ -24,13 +24,13 @@
   "steps_mean": 2.12,
   "steps_max": 6,
   "model_call_latency_ms": {
-   "p50": 0.43,
-   "p95": 0.72,
+   "p50": 0.28,
+   "p95": 0.45,
    "n": 85
   },
   "e2e_latency_ms": {
-   "p50": 1.75,
-   "p95": 3.9
+   "p50": 1.1,
+   "p95": 2.56
   },
   "input_tokens": null,
   "output_tokens": null,
@@ -86,10 +86,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    1.17,
-    0.57
+    1.18,
+    0.44
    ],
-   "e2e_latency_ms": 3.61,
+   "e2e_latency_ms": 2.81,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -133,10 +133,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.53,
-    0.45
+    0.35,
+    0.32
    ],
-   "e2e_latency_ms": 2.45,
+   "e2e_latency_ms": 1.55,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -186,10 +186,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.38,
-    0.33
+    0.25,
+    0.22
    ],
-   "e2e_latency_ms": 1.51,
+   "e2e_latency_ms": 1.03,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -232,10 +232,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.58,
-    0.37
+    0.38,
+    0.32
    ],
-   "e2e_latency_ms": 1.56,
+   "e2e_latency_ms": 1.16,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -283,10 +283,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.65,
-    0.34
+    0.42,
+    0.35
    ],
-   "e2e_latency_ms": 1.66,
+   "e2e_latency_ms": 1.2,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -331,10 +331,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.42,
-    0.38
+    0.3,
+    0.28
    ],
-   "e2e_latency_ms": 2.43,
+   "e2e_latency_ms": 1.81,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -378,10 +378,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.51,
-    0.64
+    0.34,
+    0.31
    ],
-   "e2e_latency_ms": 2.44,
+   "e2e_latency_ms": 1.61,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -436,11 +436,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.38,
-    0.35,
-    0.45
+    0.23,
+    0.23,
+    0.32
    ],
-   "e2e_latency_ms": 2.75,
+   "e2e_latency_ms": 1.7,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -492,10 +492,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.44,
-    0.74
+    0.24,
+    0.28
    ],
-   "e2e_latency_ms": 3.47,
+   "e2e_latency_ms": 1.09,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -540,10 +540,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.44,
-    0.38
+    0.45,
+    0.36
    ],
-   "e2e_latency_ms": 1.33,
+   "e2e_latency_ms": 1.24,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -586,10 +586,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.42,
-    0.4
+    0.63,
+    0.58
    ],
-   "e2e_latency_ms": 1.62,
+   "e2e_latency_ms": 1.84,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -635,10 +635,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.33,
-    0.41
+    0.41,
+    0.31
    ],
-   "e2e_latency_ms": 3.78,
+   "e2e_latency_ms": 2.32,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -710,10 +710,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.43,
-    0.38
+    0.26,
+    0.26
    ],
-   "e2e_latency_ms": 1.66,
+   "e2e_latency_ms": 1.03,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -756,10 +756,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.37,
-    0.51
+    0.25,
+    0.3
    ],
-   "e2e_latency_ms": 1.84,
+   "e2e_latency_ms": 1.09,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -805,10 +805,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.43,
-    0.46
+    0.26,
+    0.42
    ],
-   "e2e_latency_ms": 2.96,
+   "e2e_latency_ms": 1.45,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -858,10 +858,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.52,
-    0.43
+    0.34,
+    0.24
    ],
-   "e2e_latency_ms": 1.75,
+   "e2e_latency_ms": 1.09,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -906,10 +906,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.4,
-    0.46
+    0.25,
+    0.19
    ],
-   "e2e_latency_ms": 1.65,
+   "e2e_latency_ms": 0.78,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -954,10 +954,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.47,
-    0.5
+    0.3,
+    0.29
    ],
-   "e2e_latency_ms": 1.97,
+   "e2e_latency_ms": 1.18,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1002,10 +1002,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.43,
-    0.62
+    0.3,
+    0.35
    ],
-   "e2e_latency_ms": 3.38,
+   "e2e_latency_ms": 1.99,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1062,10 +1062,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.66,
-    0.93
+    0.27,
+    0.31
    ],
-   "e2e_latency_ms": 2.86,
+   "e2e_latency_ms": 1.1,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1117,11 +1117,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.48,
-    0.44,
-    0.83
+    0.23,
+    0.4,
+    0.38
    ],
-   "e2e_latency_ms": 5.9,
+   "e2e_latency_ms": 2.8,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1197,10 +1197,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.57,
-    0.53
+    0.27,
+    0.28
    ],
-   "e2e_latency_ms": 2.9,
+   "e2e_latency_ms": 1.19,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1255,11 +1255,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.48,
-    0.54,
-    0.67
+    0.24,
+    0.24,
+    0.26
    ],
-   "e2e_latency_ms": 3.08,
+   "e2e_latency_ms": 1.3,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1320,13 +1320,13 @@
    "gate_rejections": 0,
    "steps": 5,
    "model_latency_ms": [
-    0.37,
-    0.34,
-    0.43,
-    0.45,
-    0.5
+    0.2,
+    0.18,
+    0.23,
+    0.21,
+    0.23
    ],
-   "e2e_latency_ms": 4.11,
+   "e2e_latency_ms": 1.85,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1407,14 +1407,14 @@
    "gate_rejections": 0,
    "steps": 6,
    "model_latency_ms": [
-    0.41,
-    0.41,
-    0.33,
-    0.3,
-    0.31,
-    0.67
+    0.28,
+    0.26,
+    0.18,
+    0.25,
+    0.26,
+    0.17
    ],
-   "e2e_latency_ms": 3.9,
+   "e2e_latency_ms": 2.4,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1499,10 +1499,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.4,
-    0.51
+    0.25,
+    0.28
    ],
-   "e2e_latency_ms": 1.85,
+   "e2e_latency_ms": 1.06,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1558,11 +1558,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
+    0.37,
     0.38,
-    0.4,
-    0.3
+    0.21
    ],
-   "e2e_latency_ms": 1.89,
+   "e2e_latency_ms": 1.55,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1618,10 +1618,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.36,
-    0.36
+    0.26,
+    0.25
    ],
-   "e2e_latency_ms": 1.58,
+   "e2e_latency_ms": 1.08,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1678,10 +1678,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.61,
-    0.29
+    0.41,
+    0.26
    ],
-   "e2e_latency_ms": 1.0,
+   "e2e_latency_ms": 0.74,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1735,11 +1735,11 @@
    "gate_rejections": 0,
    "steps": 3,
    "model_latency_ms": [
-    0.5,
-    0.33,
-    0.67
+    0.27,
+    0.34,
+    0.32
    ],
-   "e2e_latency_ms": 1.64,
+   "e2e_latency_ms": 1.1,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1801,10 +1801,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.4,
-    0.3
+    0.32,
+    0.2
    ],
-   "e2e_latency_ms": 0.81,
+   "e2e_latency_ms": 0.61,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1857,10 +1857,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.51,
-    0.37
+    0.32,
+    0.23
    ],
-   "e2e_latency_ms": 0.98,
+   "e2e_latency_ms": 0.62,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1907,9 +1907,9 @@
    "gate_rejections": 0,
    "steps": 1,
    "model_latency_ms": [
-    0.35
+    0.2
    ],
-   "e2e_latency_ms": 0.4,
+   "e2e_latency_ms": 0.23,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1930,7 +1930,7 @@
    "scenario": "nominal",
    "success": false,
    "failures": [
-    "missing_any_of: ['not allowlisted', 'not allowed', 'only patrol', 'patrol or delivery', 'not supported']"
+    "missing_any_of: ['not allowlisted', 'not allowed', 'only patrol', 'patrol or delivery', 'patrol and delivery', 'not supported']"
    ],
    "tools_called": [
     "dispatch_task"
@@ -1946,10 +1946,10 @@
    "gate_rejections": 0,
    "steps": 2,
    "model_latency_ms": [
-    0.47,
-    0.35
+    0.26,
+    0.27
    ],
-   "e2e_latency_ms": 0.93,
+   "e2e_latency_ms": 0.61,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -1999,13 +1999,13 @@
    "gate_rejections": 0,
    "steps": 5,
    "model_latency_ms": [
-    0.37,
-    0.33,
-    0.28,
-    0.23,
-    0.22
+    0.52,
+    0.34,
+    0.21,
+    0.12,
+    0.16
    ],
-   "e2e_latency_ms": 2.8,
+   "e2e_latency_ms": 2.56,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2079,7 +2079,7 @@
    "gate_rejections": 0,
    "steps": 0,
    "model_latency_ms": [],
-   "e2e_latency_ms": 0.03,
+   "e2e_latency_ms": 0.02,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2112,7 +2112,7 @@
    "gate_rejections": 0,
    "steps": 0,
    "model_latency_ms": [],
-   "e2e_latency_ms": 0.03,
+   "e2e_latency_ms": 0.02,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2145,7 +2145,7 @@
    "gate_rejections": 0,
    "steps": 0,
    "model_latency_ms": [],
-   "e2e_latency_ms": 0.03,
+   "e2e_latency_ms": 0.02,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2178,7 +2178,7 @@
    "gate_rejections": 0,
    "steps": 0,
    "model_latency_ms": [],
-   "e2e_latency_ms": 0.05,
+   "e2e_latency_ms": 0.02,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],
@@ -2211,9 +2211,9 @@
    "gate_rejections": 0,
    "steps": 1,
    "model_latency_ms": [
-    0.72
+    0.38
    ],
-   "e2e_latency_ms": 0.81,
+   "e2e_latency_ms": 0.42,
    "input_tokens": null,
    "output_tokens": null,
    "ungrounded_citations": [],

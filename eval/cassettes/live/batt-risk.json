@@ -4,30 +4,30 @@
  "case_id": "batt-risk",
  "turns": [
   {
-   "request_digest": "5685ebb8e7b7d07d",
+   "request_digest": "7b537aaaeb35018b",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "fleet_overview_q7c92mhkmjnh",
+      "id": "fleet_overview_9ktp9a5z2djz",
       "name": "fleet_overview",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2016,
-    "output_tokens": 101
+    "input_tokens": 2144,
+    "output_tokens": 97
    }
   },
   {
-   "request_digest": "285d605720afc9ed",
+   "request_digest": "80c9c605ff1d6f52",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "recent_alerts_2pygpwkr0eb9",
+      "id": "recent_alerts_ea9wa60tj7hc",
       "name": "recent_alerts",
       "arguments": {
        "since_min": 60
@@ -35,36 +35,36 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2569,
-    "output_tokens": 92
+    "input_tokens": 2697,
+    "output_tokens": 88
    }
   },
   {
-   "request_digest": "76f1e637ebb323d5",
+   "request_digest": "ddd1bb5471386fcb",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_stuck_robots_rttczbhgrft0",
+      "id": "find_stuck_robots_ny8g0q4gj07g",
       "name": "find_stuck_robots",
       "arguments": {}
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2707,
-    "output_tokens": 63
+    "input_tokens": 2835,
+    "output_tokens": 180
    }
   },
   {
-   "request_digest": "393b319dc959a815",
+   "request_digest": "a10918abe4b32a5a",
    "turn": {
-    "text": "Yes, there is a battery risk. \n\n**Critical risk:** tote_4 is working on delivery.dispatch-402 with 11% battery [tote_4] [delivery.dispatch-402]. This triggered a LOW_BATTERY_ON_TASK warning from the stuck robot scan.\n\n**Other concern:** tug_3 is charging but only at 18% battery [tug_3], indicating it was lower before charging started.\n\nNext steps: Consider reassigning tote_4's task or sending it to charge immediately. Monitor tug_3's charge progress.",
+    "text": "Yes, there is a battery risk. [tote_4] is at 11% battery while working on [delivery.dispatch-402] and the system flagged it as LOW_BATTERY_ON_TASK (warning). No other robots are critically low; tug_3 is charging at 18% and all others are above 40%. No recent alerts were raised.\n\nNext step: consider pausing or reassigning [delivery.dispatch-402] to let [tote_4] charge before battery becomes critical.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2930,
-    "output_tokens": 412
+    "input_tokens": 3058,
+    "output_tokens": 311
    }
   }
  ]

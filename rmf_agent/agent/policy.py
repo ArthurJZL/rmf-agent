@@ -67,6 +67,13 @@ WRITE_INTENT = {
     "dispatch_task": re.compile(r"\b(dispatch|send|patrol|deliver|delivery)\b", re.IGNORECASE),
     "cancel_task": re.compile(r"\bcancel\b", re.IGNORECASE),
 }
+# A dispatch may only use a category the operator actually named. Unknown categories are left
+# to the tool, which rejects anything outside the allowlist; this check stops the model from
+# quietly swapping an unsupported request ("cleaning") for a supported one ("patrol").
+CATEGORY_WORDS = {
+    "patrol": re.compile(r"\bpatrol", re.IGNORECASE),
+    "delivery": re.compile(r"\bdeliver", re.IGNORECASE),
+}
 CONFIRM = re.compile(
     r"\b(confirm(ed)?|go ahead|proceed|commit|approved?|yes,? (do it|go|please))\b", re.IGNORECASE
 )
@@ -126,6 +133,17 @@ def authorize_write(
             "no_operator_instruction",
             f"The operator has not asked for {call.name} in this session.",
         )
+    if call.name == "dispatch_task":
+        category = str(call.arguments.get("category", "")).lower()
+        named = CATEGORY_WORDS.get(category)
+        if named is not None and not any(named.search(t) for t in operator_turns):
+            return WriteDecision(
+                False,
+                "category_not_requested",
+                f"The operator did not ask for a {category} task. Never substitute a different "
+                "task type: tell the operator the requested type is not supported, list the "
+                "categories dispatch_task accepts, and ask how to proceed.",
+            )
     if call.name == "cancel_task":
         task_id = str(call.arguments.get("task_id", ""))
         if not task_id or not any(task_id in t for t in operator_turns):

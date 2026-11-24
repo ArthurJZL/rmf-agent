@@ -4,7 +4,7 @@
  "case_id": "batt-risk",
  "turns": [
   {
-   "request_digest": "5685ebb8e7b7d07d",
+   "request_digest": "7b537aaaeb35018b",
    "turn": {
     "text": "",
     "tool_plan": "Calling fleet_overview, find_stuck_robots to answer the operator.",
@@ -26,7 +26,7 @@
    }
   },
   {
-   "request_digest": "6c431969a29822c6",
+   "request_digest": "571eb5b9f0c3a4cf",
    "turn": {
     "text": "Lowest battery: [tote_4] at 11% (working). [tote_4] is at 11% while working on [delivery.dispatch-402], below the 20% threshold. [tug_3] is at 18% and charging. Suggested next step: send the robot to a charger after its current task, or reassign the task if the dropoff is far.",
     "tool_plan": null,

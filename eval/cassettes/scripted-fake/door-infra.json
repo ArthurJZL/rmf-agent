@@ -4,7 +4,7 @@
  "case_id": "door-infra",
  "turns": [
   {
-   "request_digest": "95f690d65eea7fc4",
+   "request_digest": "2f1323f60ddeeff3",
    "turn": {
     "text": "",
     "tool_plan": "Calling door_and_lift_status to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "a7ab7b482f440646",
+   "request_digest": "064b97f352f6af7b",
    "turn": {
     "text": "Open doors: none. Doors: [dock_door_1] closed, [fire_door_a] closed, [corridor_door_l2] closed. Lifts: [lift_1] agv mode at L1 (in service). Needs attention: door fire_door_a is closed; waiting: tug_2 (8.0 min).",
     "tool_plan": null,

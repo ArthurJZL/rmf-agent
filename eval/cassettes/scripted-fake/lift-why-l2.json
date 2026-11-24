@@ -4,7 +4,7 @@
  "case_id": "lift-why-l2",
  "turns": [
   {
-   "request_digest": "e49375be74347638",
+   "request_digest": "8e305f6c47588065",
    "turn": {
     "text": "",
     "tool_plan": "Calling door_and_lift_status, list_tasks, find_places, recent_alerts to answer the operator.",
@@ -44,7 +44,7 @@
    }
   },
   {
-   "request_digest": "9883d74e71a09410",
+   "request_digest": "1d12bb73ffea9e20",
    "turn": {
     "text": "[lift_1] is out of service: mode offline at L1, state unchanged for 14.0 min. [tote_5] has been waiting at the lift for 12.0 min. Tasks that need L2: [delivery.dispatch-311] (blocked), [patrol.dispatch-312] (queued), [delivery.dispatch-313] (queued). Alert [alert-3101] (error): lift_1 reported mode OFFLINE at floor L1. Suggested next step: get the lift back to AGV mode; L2 work waits until then.",
     "tool_plan": null,

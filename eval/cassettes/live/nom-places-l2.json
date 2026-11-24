@@ -4,13 +4,13 @@
  "case_id": "nom-places-l2",
  "turns": [
   {
-   "request_digest": "5199bce5436e1751",
+   "request_digest": "5d21051aa5cb2ce0",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "find_places_gs1dcz9d0qn9",
+      "id": "find_places_pda8x1x92ny7",
       "name": "find_places",
       "arguments": {
        "level": "L2"
@@ -18,19 +18,19 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2018,
-    "output_tokens": 149
+    "input_tokens": 2146,
+    "output_tokens": 144
    }
   },
   {
-   "request_digest": "ed7dfa6ec861e0b0",
+   "request_digest": "1ff3009c44e4001f",
    "turn": {
-    "text": "On L2 you can send a robot to 4 locations:\n\n- `lift_lobby_L2` - lift lobby area\n- `pick_l2_1` - pickup point 1\n- `pick_l2_2` - pickup point 2  \n- `charger_l2` - charging station (has charger)\n\nAll are on level L2. The charger location is the only one with a charger. Which type of destination do you need?",
+    "text": "On L2 you can send a robot to 4 places:\n\n- lift_lobby_L2\n- pick_l2_1  \n- pick_l2_2\n- charger_l2 (has a charger)\n\nAll are pickup/dropoff disabled except charger_l2 which can charge robots.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2237,
-    "output_tokens": 299
+    "input_tokens": 2365,
+    "output_tokens": 257
    }
   }
  ]

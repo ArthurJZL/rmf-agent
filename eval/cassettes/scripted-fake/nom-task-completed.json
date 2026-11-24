@@ -4,7 +4,7 @@
  "case_id": "nom-task-completed",
  "turns": [
   {
-   "request_digest": "eac6e5bcbde15afe",
+   "request_digest": "3095900956b6dd55",
    "turn": {
     "text": "",
     "tool_plan": "Calling task_status, task_log to answer the operator.",
@@ -30,7 +30,7 @@
    }
   },
   {
-   "request_digest": "2147c557d7d9d0a3",
+   "request_digest": "5822459e910ee969",
    "turn": {
     "text": "[delivery.dispatch-098] is completed (delivery on [tote_4], requested by wms_bridge, dock_1 -> pack_1), finished 2026-03-02T13:33:00Z. Log (4 entries): 13:22 Moving to [dock_1]; 13:27 Picked up payload at [dock_1]; 13:33 Dropped off payload at [pack_1]; 13:33 Task completed.",
     "tool_plan": null,

@@ -4,13 +4,13 @@
  "case_id": "conflict-task-status",
  "turns": [
   {
-   "request_digest": "fcdf67d97348e187",
+   "request_digest": "5034164803080459",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "task_status_sd8xes75jvg1",
+      "id": "task_status_0f9fpqtwcds8",
       "name": "task_status",
       "arguments": {
        "task_id": "delivery.dispatch-701"
@@ -18,19 +18,39 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2018,
-    "output_tokens": 93
+    "input_tokens": 2146,
+    "output_tokens": 101
    }
   },
   {
-   "request_digest": "306673b744ba7481",
+   "request_digest": "2a364755aede756f",
    "turn": {
-    "text": "Task delivery.dispatch-701 is **queued** [delivery.dispatch-701]:\n- Requested at 13:54, estimate 8 min, currently waiting 6 min\n- Destinations: dock_2, staging_b\n- No alerts, no recent log entries\n- Dispatch status: queued\n\nThe task is waiting normally and hasn't exceeded its estimate.",
+    "text": "",
+    "tool_plan": null,
+    "tool_calls": [
+     {
+      "id": "task_log_f0c0sx0xr68j",
+      "name": "task_log",
+      "arguments": {
+       "task_id": "delivery.dispatch-701",
+       "limit": 10
+      }
+     }
+    ],
+    "finish_reason": "TOOL_CALL",
+    "input_tokens": 2369,
+    "output_tokens": 67
+   }
+  },
+  {
+   "request_digest": "91ef47ae48018dfd",
+   "turn": {
+    "text": "delivery.dispatch-701 is queued and waiting:\n- Status: queued (dispatch_status: queued)\n- Requested at 13:54, estimate 8 min, currently waiting 6 min\n- Destinations: dock_2, staging_b\n- No recent log entries, no alerts\n\nThe task has been waiting 6 minutes of its 8-minute estimate and is still in the queued state.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2241,
-    "output_tokens": 257
+    "input_tokens": 2525,
+    "output_tokens": 312
    }
   }
  ]

@@ -4,13 +4,13 @@
  "case_id": "nom-task-completed",
  "turns": [
   {
-   "request_digest": "eac6e5bcbde15afe",
+   "request_digest": "3095900956b6dd55",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "task_status_tevkm96s2y6d",
+      "id": "task_status_d1dm83nj62s5",
       "name": "task_status",
       "arguments": {
        "task_id": "delivery.dispatch-098"
@@ -18,38 +18,39 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2016,
+    "input_tokens": 2144,
     "output_tokens": 101
    }
   },
   {
-   "request_digest": "2ffe6c62993ed409",
+   "request_digest": "ba9dd4b691f6d661",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "task_log_3zhhw1fzx00b",
+      "id": "task_log_26v9y7qrm7sp",
       "name": "task_log",
       "arguments": {
-       "task_id": "delivery.dispatch-098"
+       "task_id": "delivery.dispatch-098",
+       "limit": 20
       }
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2413,
-    "output_tokens": 64
+    "input_tokens": 2541,
+    "output_tokens": 71
    }
   },
   {
-   "request_digest": "4b5cb3973c8ae561",
+   "request_digest": "aa8327d0878dfb99",
    "turn": {
-    "text": "delivery.dispatch-098 completed successfully. It was assigned to [tote_4], started at 13:22, picked up payload at [dock_1] at 13:27, dropped off at [pack_1] at 13:33, and finished at 13:33. No errors or alerts are associated with this task.",
+    "text": "delivery.dispatch-098 completed successfully. It was assigned to [tote_4], started at 13:22, picked up payload at [dock_1] at 13:27, dropped off at [pack_1] at 13:33, and finished at 13:33. No alerts or issues reported.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2726,
-    "output_tokens": 255
+    "input_tokens": 2860,
+    "output_tokens": 229
    }
   }
  ]

@@ -4,7 +4,7 @@
  "case_id": "lift-explain-robot",
  "turns": [
   {
-   "request_digest": "89aa7de322287833",
+   "request_digest": "6f03d2f80bcb3a6c",
    "turn": {
     "text": "",
     "tool_plan": "Calling explain_robot to answer the operator.",
@@ -23,7 +23,7 @@
    }
   },
   {
-   "request_digest": "b37b41f1c8257ba9",
+   "request_digest": "6f7616c00b6123ef",
    "turn": {
     "text": "[tote_5] is working, battery 71%, on L1, working on [delivery.dispatch-311] (blocked). Its task [delivery.dispatch-311] is blocked. [tote_5] has been waiting 12.0 min for lift [lift_1], which is in offline mode at L1. Suggested next step: check lift lift_1; tasks that need it wait until it is back in AGV mode.",
     "tool_plan": null,

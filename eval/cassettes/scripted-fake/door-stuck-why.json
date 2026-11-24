@@ -4,7 +4,7 @@
  "case_id": "door-stuck-why",
  "turns": [
   {
-   "request_digest": "54d47a6b6b87d21c",
+   "request_digest": "a0802047fe29ed72",
    "turn": {
     "text": "",
     "tool_plan": "Calling find_stuck_robots to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "469677041b3e18b3",
+   "request_digest": "1aae172d56acf115",
    "turn": {
     "text": "",
     "tool_plan": "Calling explain_robot to answer the operator.",
@@ -40,7 +40,7 @@
    }
   },
   {
-   "request_digest": "3c09b1df5cba3e9f",
+   "request_digest": "d63a6422ef0b27af",
    "turn": {
     "text": "1 robot(s) look stuck. [tug_2] is working, battery 64%, on L1, working on [delivery.dispatch-204] (underway). [tug_2] has been waiting 8.0 min for door [fire_door_a], which is closed (door state unchanged for 8.0 min). Last log (2026-03-02T13:52:00Z): \"Waiting for door [fire_door_a] to open\". Alert [alert-2041] (warning): Door not responding. Suggested next step: check door fire_door_a and its door adapter; the task resumes when the door reports open.",
     "tool_plan": null,

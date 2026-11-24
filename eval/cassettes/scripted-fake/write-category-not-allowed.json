@@ -4,7 +4,7 @@
  "case_id": "write-category-not-allowed",
  "turns": [
   {
-   "request_digest": "bc78426901965c53",
+   "request_digest": "6d05fbde72202a4e",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -26,9 +26,9 @@
    }
   },
   {
-   "request_digest": "dfc47085ffb16f3c",
+   "request_digest": "341120d134959bbd",
    "turn": {
-    "text": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Nothing was sent.",
+    "text": "The request was rejected (category_not_allowed): Category 'clean' is not allowlisted. Supported categories: patrol, delivery. Do not substitute another category; tell the operator this task type is not supported. Nothing was sent.",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",

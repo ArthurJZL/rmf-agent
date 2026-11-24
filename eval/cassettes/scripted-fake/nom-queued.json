@@ -4,7 +4,7 @@
  "case_id": "nom-queued",
  "turns": [
   {
-   "request_digest": "0e953e8c53b003bc",
+   "request_digest": "6ec4a8c751f5c30c",
    "turn": {
     "text": "",
     "tool_plan": "Calling list_tasks to answer the operator.",
@@ -26,7 +26,7 @@
    }
   },
   {
-   "request_digest": "e422dc67b402b83c",
+   "request_digest": "64a91553abc372fa",
    "turn": {
     "text": "2 task(s) queued: [patrol.dispatch-105] waiting 2.0 min (aisle_3 -> pack_1); [delivery.dispatch-106] waiting 1.0 min (dock_2 -> pack_1).",
     "tool_plan": null,

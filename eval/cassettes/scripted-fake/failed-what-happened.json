@@ -4,7 +4,7 @@
  "case_id": "failed-what-happened",
  "turns": [
   {
-   "request_digest": "baa5f6e37fd7ffd0",
+   "request_digest": "c957a7fb9b385a82",
    "turn": {
     "text": "",
     "tool_plan": "Calling task_status, task_log to answer the operator.",
@@ -30,7 +30,7 @@
    }
   },
   {
-   "request_digest": "753ced0cbc3a36a1",
+   "request_digest": "3b9edff2dc1f3fef",
    "turn": {
     "text": "[delivery.dispatch-611] is failed (delivery on [tote_1], requested by wms_bridge, aisle_3 -> pack_2), finished 2026-03-02T13:46:00Z. Failure reason from the log: \"Failed to plan a route to [pack_2]: waypoint is not on the nav graph\" (2026-03-02T13:46:00Z) / \"Task failed; payload still on tote_1\" (2026-03-02T13:46:00Z). Related alert: [alert-6110].",
     "tool_plan": null,

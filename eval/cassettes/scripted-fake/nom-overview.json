@@ -4,7 +4,7 @@
  "case_id": "nom-overview",
  "turns": [
   {
-   "request_digest": "aa21495c5c3364ef",
+   "request_digest": "c8e41eaa3dc420b7",
    "turn": {
     "text": "",
     "tool_plan": "Calling fleet_overview to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "bbc90369d1f68a40",
+   "request_digest": "79f1d7d51822f70b",
    "turn": {
     "text": "8 robots across 2 fleets: 2 charging, 3 idle, 3 working. Working: [tote_1] on [delivery.dispatch-101], [tote_2] on [patrol.dispatch-102], [tug_1] on [delivery.dispatch-103]. Lowest battery: [tug_3] at 37% (charging).",
     "tool_plan": null,

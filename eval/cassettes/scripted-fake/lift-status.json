@@ -4,7 +4,7 @@
  "case_id": "lift-status",
  "turns": [
   {
-   "request_digest": "a73c1cf6f3c30298",
+   "request_digest": "92fb0d1b78c29537",
    "turn": {
     "text": "",
     "tool_plan": "Calling door_and_lift_status to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "06e506f1ffd4bfbe",
+   "request_digest": "d8f75603a7fd7c93",
    "turn": {
     "text": "Open doors: none. Doors: [dock_door_1] closed, [fire_door_a] closed, [corridor_door_l2] closed. Lifts: [lift_1] offline mode at L1 (OUT OF service). Needs attention: lift lift_1 is out of service (mode offline); waiting: tote_5 (12.0 min).",
     "tool_plan": null,

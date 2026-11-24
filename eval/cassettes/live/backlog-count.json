@@ -4,13 +4,13 @@
  "case_id": "backlog-count",
  "turns": [
   {
-   "request_digest": "409aa1cc27dda824",
+   "request_digest": "72cd9a96767c1327",
    "turn": {
     "text": "",
     "tool_plan": null,
     "tool_calls": [
      {
-      "id": "list_tasks_vfcajmxbs10n",
+      "id": "list_tasks_ztctf8d0az15",
       "name": "list_tasks",
       "arguments": {
        "status": [
@@ -21,19 +21,19 @@
      }
     ],
     "finish_reason": "TOOL_CALL",
-    "input_tokens": 2017,
-    "output_tokens": 164
+    "input_tokens": 2145,
+    "output_tokens": 139
    }
   },
   {
-   "request_digest": "6d2156c3e8dadf51",
+   "request_digest": "925b009bedcfe28e",
    "turn": {
     "text": "There are 10 tasks waiting in the queue. The oldest has been waiting 55 minutes (delivery.dispatch-530) and the newest just 3 minutes (delivery.dispatch-539).",
     "tool_plan": null,
     "tool_calls": [],
     "finish_reason": "COMPLETE",
-    "input_tokens": 2906,
-    "output_tokens": 126
+    "input_tokens": 3034,
+    "output_tokens": 141
    }
   }
  ]

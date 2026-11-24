@@ -4,7 +4,7 @@
  "case_id": "conflict-detect",
  "turns": [
   {
-   "request_digest": "5088aeca15fbf2a8",
+   "request_digest": "ba8083d3fc50d886",
    "turn": {
     "text": "",
     "tool_plan": "Calling recent_alerts, list_tasks to answer the operator.",
@@ -31,7 +31,7 @@
    }
   },
   {
-   "request_digest": "a28da56ea82d71fa",
+   "request_digest": "7c2970dc30403788",
    "turn": {
     "text": "Alert [alert-7010]: delivery.dispatch-701 and delivery.dispatch-702 both need dock_2 at 14:04 UTC. Queued tasks that both start at dock_2: [delivery.dispatch-701] (requested by ops_dashboard), [delivery.dispatch-702] (requested by wms_bridge). Neither task was created by rmf-agent, so I cannot cancel either one; the requesters should decide which goes first.",
     "tool_plan": null,

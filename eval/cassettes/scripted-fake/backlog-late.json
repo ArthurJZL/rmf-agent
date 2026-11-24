@@ -4,7 +4,7 @@
  "case_id": "backlog-late",
  "turns": [
   {
-   "request_digest": "ebf9302ccc9bbf16",
+   "request_digest": "92550a8faf557972",
    "turn": {
     "text": "",
     "tool_plan": "Calling late_tasks to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "7e915adf9acb9c63",
+   "request_digest": "2e52bd82748ce192",
    "turn": {
     "text": "7 of 15 open tasks are late (rules: queued over 15 min, or running over 1.25x the estimate): [delivery.dispatch-530] queued 55.0 min (40.0 min past SLA); [delivery.dispatch-531] queued 48.0 min (33.0 min past SLA); [patrol.dispatch-532] queued 41.0 min (26.0 min past SLA); [patrol.dispatch-520] on [tote_2] running 40.0 min vs 20.0 min estimate (20.0 min over); [delivery.dispatch-533] queued 33.0 min (18.0 min past SLA); [delivery.dispatch-534] queued 27.0 min (12.0 min past SLA); [delivery.dispatch-535] queued 19.0 min (4.0 min past SLA).",
     "tool_plan": null,

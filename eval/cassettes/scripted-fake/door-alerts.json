@@ -4,7 +4,7 @@
  "case_id": "door-alerts",
  "turns": [
   {
-   "request_digest": "7cb375bffc7f5af0",
+   "request_digest": "55e89bc693aa246c",
    "turn": {
     "text": "",
     "tool_plan": "Calling recent_alerts to answer the operator.",
@@ -21,7 +21,7 @@
    }
   },
   {
-   "request_digest": "a808363020b3a62f",
+   "request_digest": "4c6d35f6b384f2ec",
    "turn": {
     "text": "1 unresponded alert(s): [alert-2041] warning, 6.0 min ago: Door not responding (fire_door_a), task [delivery.dispatch-204].",
     "tool_plan": null,

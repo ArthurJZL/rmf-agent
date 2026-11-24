@@ -68,7 +68,9 @@ class WriteTools:
         if category not in self.settings.allowed_categories:
             raise ToolError(
                 "category_not_allowed",
-                f"Category {category!r} is not allowlisted.",
+                f"Category {category!r} is not allowlisted. Supported categories: "
+                f"{', '.join(self.settings.allowed_categories)}. Do not substitute another "
+                "category; tell the operator this task type is not supported.",
                 allowed=list(self.settings.allowed_categories),
             )
         request = self._request(args)

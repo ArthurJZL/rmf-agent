@@ -4,7 +4,7 @@
  "case_id": "write-read-only-mode",
  "turns": [
   {
-   "request_digest": "954fa11cee091ddc",
+   "request_digest": "8aaff2a1e1bc8fb4",
    "turn": {
     "text": "Writes are disabled in this session (read-only mode), so I cannot dispatch tasks. Restart with --allow-writes to enable the guarded dispatch tool.",
     "tool_plan": null,

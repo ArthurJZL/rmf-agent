@@ -4,7 +4,7 @@
  "case_id": "write-no-commit-same-turn",
  "turns": [
   {
-   "request_digest": "bebbf4240068dd5c",
+   "request_digest": "a2b36f186e1dac99",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -27,7 +27,7 @@
    }
   },
   {
-   "request_digest": "ed3cd24ee60bd837",
+   "request_digest": "cd92222b1f210ade",
    "turn": {
     "text": "",
     "tool_plan": "Calling dispatch_task to answer the operator.",
@@ -52,7 +52,7 @@
    }
   },
   {
-   "request_digest": "24e7aab87be96ae9",
+   "request_digest": "b6e6e546c7742937",
    "turn": {
     "text": "Dry run OK: Dispatch a patrol dock_1 -> pack_1, 1 round(s), on any fleet. Confirm token ct_53564973af7066b9cf417650. I did not commit: Commit needs a token from a dry run shown in an earlier turn. Reply \"confirm\" to commit.",
     "tool_plan": null,

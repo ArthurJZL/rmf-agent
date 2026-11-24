@@ -2,9 +2,9 @@
 
 > **OFFLINE RUN WITH A SCRIPTED FAKE MODEL.** `scripted-fake` is a keyword-rule script, not a language model. These numbers check the tools, the safety policy and the harness wiring end to end. They say nothing about how a real model (Cohere or otherwise) performs. Latencies are in-process wall clock and measure harness overhead only.
 
-- Generated: 2026-11-23T21:15:20Z (git 271d183)
+- Generated: 2026-11-24T02:39:00Z (git 12cf22f)
 - Model: `scripted-fake` (fake), max 8 model calls per turn
-- Python 3.12.3, cohere SDK 7.3.2
+- Python 3.12.12, cohere SDK 7.3.2
 
 ## Metrics
 
@@ -20,8 +20,8 @@
 | Write calls rejected by the token gate | 0 |
 | Cases with ungrounded citations | 0 |
 | Model calls per case (mean / max) | 2.08 / 5 |
-| Model-call latency p50 / p95 (ms) | 0.36 / 0.62 |
-| End-to-end latency per case p50 / p95 (ms) | 1.66 / 3.41 |
+| Model-call latency p50 / p95 (ms) | 0.29 / 0.5 |
+| End-to-end latency per case p50 / p95 (ms) | 1.35 / 2.56 |
 | Tokens | not reported by this model |
 
 ## By scenario

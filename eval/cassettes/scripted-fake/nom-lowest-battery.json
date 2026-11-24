@@ -4,7 +4,7 @@
  "case_id": "nom-lowest-battery",
  "turns": [
   {
-   "request_digest": "ae78a22b3c611b65",
+   "request_digest": "02148709abd887cc",
    "turn": {
     "text": "",
     "tool_plan": "Calling fleet_overview, find_stuck_robots to answer the operator.",
@@ -26,7 +26,7 @@
    }
   },
   {
-   "request_digest": "78e2cdb364e59a7f",
+   "request_digest": "f71021398b596285",
    "turn": {
     "text": "Lowest battery: [tug_3] at 37% (charging). No robot is below the 20% threshold outside a charger.",
     "tool_plan": null,
